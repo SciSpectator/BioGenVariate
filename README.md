@@ -1,1 +1,1 @@
-# GeoExplorer  ![Uploading image.png…]()
+# GeoExplorer 
