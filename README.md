@@ -1,34 +1,17 @@
 # GeoExplorer 
+
 🔬 Core Features
 
-    Intelligent Sample Extraction: Utilizes the entire GEOmetadb.sqlite database, loaded into memory for rapid querying. Samples are filtered not just by platform but through a powerful two-stage process:
+Intelligent Sample Extraction: Utilizes the entire GEOmetadb.sqlite database, loaded into memory for rapid querying, and applies a two-stage semantic and lexical filtering process to find the most relevant samples.
 
-        Lexical Screen: A fast, broad search using user-defined tokens and their WordNet synonyms.
+Bio-Aware Token Analysis: Leverages a fine-tuned PubMedBERT model to identify statistically enriched and biologically relevant keywords from sample metadata.
 
-        Semantic Screen: A precise filter using SciBERT embeddings to find samples semantically similar to the user's query context.
+Ontology-Driven Clustering: Maps relevant keywords to the DOID (Human Disease Ontology) and Uberon (multi-species anatomy ontology) to cluster findings into meaningful biological categories.
 
-    Bio-Aware Token Analysis: Leverages a fine-tuned PubMedBERT model (AttentionSeeker class) and a curated biomedical keyword corpus to:
+Flexible Case-Control Labeling: Supports both fully automatic labeling based on semantic similarity and an interactive manual labeling mode for expert-driven classification.
 
-        Identify statistically enriched keywords in sample metadata using Z-tests.
+Interactive Gene Distribution Explorer: A powerful interface to plot expression distributions, interactively select sample tails or bins, and trigger deep-dive analysis on those subsets.
 
-        Filter enriched keywords for biomedical relevance based on semantic similarity, eliminating noise.
+Automated Batch Processing: Includes functionality to automate tail analysis for all genes on a platform, complete with a negative control run (shuffled metadata) to validate findings.
 
-    Ontology-Driven Clustering: Maps bio-relevant keywords to canonical terms from the DOID (Human Disease Ontology) and Uberon (multi-species anatomy ontology). This allows for the clustering and visualization of tokens into meaningful biological categories (e.g., diseases, tissues).
-
-    Flexible Case-Control Labeling:
-
-        Automatic Mode: Classifies samples using BioBERT embeddings to measure similarity against user-defined "case" and "control" concepts.
-
-        Manual Mode: Provides a streamlined UI for expert-driven, sample-by-sample labeling.
-
-    Interactive Gene Distribution Explorer: A powerful pop-up interface to:
-
-        Plot and analyze expression distributions for any gene across multiple platforms.
-
-        Interactively select samples from histogram bins or distribution tails for deep-dive analysis.
-
-        Generate and save publication-quality plots: density plots, word clouds, ontology-based cluster graphs, and frequency bar plots.
-
-    Batch Processing: Automates the analysis of distribution tails for all genes on a platform, including a negative control run with shuffled metadata to validate findings.
-
-    Robust & Self-Contained: Multi-threaded operations for a non-blocking UI, intelligent caching for ontologies and embeddings, and a clear, structured output file system for results.
+Structured & Reproducible Results: Automatically generates a comprehensive set of plots, graphs, and data tables for each analysis, saved in a logically structured, timestamped directory.
