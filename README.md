@@ -237,7 +237,8 @@ The true power of BioGenVariate is unlocked when you analyze a region of interes
 
 # Example results - tissue canonical tokens frequency results ( AC1045372.2 from GPL570 - right tail sector of distribution ) 
 
-<img width="1781" height="1183" alt="frequencyplot_clusteredtokens_All Tokens" src="https://github.com/user-attachments/assets/aa2d6813-99ec-401a-84e4-bc3fbc7bb964" />
+<img width="1781" height="1183" alt="frequencyplot_clusteredtokens_Tissue Tokens" src="https://github.com/user-attachments/assets/f38914b2-5110-4569-9b55-eded4e13a20b" />
+
 
 
 # Example results - disease canonical tokens frequency results ( WDR96 from GPL96 - right tail sector of distribution ) 
