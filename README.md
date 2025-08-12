@@ -230,8 +230,19 @@ Below the plots, a table will also show the results of a statistical test (Wilco
 
 # 4. Generating and Interpreting Results
 
+
+
 The true power of BioGenVariate is unlocked when you analyze a region of interest from the gene expression plot. Simply clicking "Analyze LEFT Tail" or "Analyze RIGHT Tail" triggers a powerful backend cascade. The application automatically identifies statistically enriched tokens in the metadata of those specific samples, filters them for biological relevance, and clusters them using disease and tissue ontologies. This process generates a suite of visualizations, including a powerful Canonical Word Cloud where terms are colored by their ontological category (e.g., red for disease, green for tissue), providing an immediate, contextualized overview of the biological themes that define your sample set. All plots and detailed statistical tables are automatically saved to the NEW_RESULTS_ROOT directory for your records.
 
+
+# Example results - tissue canonical tokens frequency results ( AC1045372.2 from GPL570 - right tail sector of distribution ) 
+
+<img width="1781" height="1183" alt="frequencyplot_clusteredtokens_All Tokens" src="https://github.com/user-attachments/assets/aa2d6813-99ec-401a-84e4-bc3fbc7bb964" />
+
+
+# Example results - disease canonical tokens frequency results ( WDR96 from GPL96 - right tail sector of distribution ) 
+
+<img width="1781" height="1183" alt="frequencyplot_clusteredtokens_Disease Tokens" src="https://github.com/user-attachments/assets/2ac801aa-dcbc-4273-890d-3e8ac95ad266" />
 
 
 
