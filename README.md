@@ -132,6 +132,41 @@ Manual Labeling: Choose this if you want to sort each sample yourself. A window 
 <img width="1909" height="1079" alt="DistributionExplorer" src="https://github.com/user-attachments/assets/610dfef9-3db6-4a68-8cd2-90f6a58ccbeb" />
 
 
+This tool is for deep-dive analysis. It lets you see how a gene's expression is distributed across your samples and then automatically analyze the metadata of interesting groups (like those with very high or very low expression).
+
+# Step 1: Plot Your Gene's Distribution
+
+First, you need to visualize the expression data.
+
+    Open the Explorer: Click the "Gene Distribution Explorer" button in the main window.
+
+    Select Your Data: In the new window, check the box for the platform you are analyzing (e.g., GPL570).
+
+    Enter Your Gene: Type the official symbol for the gene you are interested in into the "Gene Symbol(s)" box (e.g., TP53).
+
+    Click "Plot Distributions": A histogram will appear, showing you the full expression pattern for that gene across all of your samples.
+
+# Step 2: Choose a Region to Analyze
+
+Now, you can tell BioGenVariate which group of samples you want to investigate. You have a few options:
+
+    Analyze the Tails: Click the "Analyze LEFT Tail" button to automatically select all samples with the lowest expression, or "Analyze RIGHT Tail" for the highest. This is the most common and powerful feature.
+
+    Analyze a Specific Bin: You can also click directly on any bar in the histogram to analyze only the samples within that specific expression range.
+
+    Analyze Everything: Click "Analyze Full Distribution" to analyze all samples for the selected gene together.
+
+# Step 3: Get Your Results
+
+Once you choose a region, the analysis starts automatically. BioGenVariate will find the keywords that are most common in the metadata of your selected samples and then cluster them into meaningful biological themes. New windows will pop up showing you:
+
+    A Canonical Word Cloud: This shows the most important biological terms, colored by category (red for disease, green for tissue).
+
+    A Network Graph: This visualizes how different keywords are related to each other.
+
+All of these plots and the detailed data tables are automatically saved to a new folder in your NEW_RESULTS_ROOT directory, so you can use them directly in your research.
+
+
 
 
 
