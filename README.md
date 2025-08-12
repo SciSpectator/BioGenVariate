@@ -120,7 +120,33 @@ The true power of GeoExplorer is unlocked when you analyze a region of interest 
 
  # Output Results File Structure: 📁
 
-<img width="1024" height="1536" alt="ChatGPT Image Aug 12, 2025, 03_46_07 AM" src="https://github.com/user-attachments/assets/8e9979fd-37a2-4d81-8d85-88501449fc78" />
+BioGenVariate/
+├── main.py
+├── config.py
+├── requirements.txt
+|
+├── gui/
+│   ├── __init__.py
+│   ├── main_window.py
+│   ├── compare_window.py
+│   └── distribution_explorer.py
+|
+├── data_processing/
+│   ├── __init__.py
+│   ├── extraction.py
+│   ├── labeling.py
+│   └── loader.py
+|
+├── utils/
+│   ├── __init__.py
+│   ├── embedding.py
+│   ├── ontology.py
+│   ├── statistics.py
+│   ├── patches.py
+│   └── helpers.py
+|
+└── NEW_RESULTS_ROOT/
+    └── .gitkeep
 
  
 
