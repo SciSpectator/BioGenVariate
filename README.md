@@ -181,6 +181,53 @@ All of these plots and the detailed data tables are automatically saved to a new
 
 
 
+This tool is designed for advanced comparisons. It lets you load your own lists of case and control samples and visually compare their gene expression patterns against each other or against different datasets.
+
+# Step 1: Load Your Sample Groups
+
+First, you need to tell BioGenVariate which samples belong to which group.
+
+    Open the Tool: Click the "Compare Distributions" button in the main window to open the comparison interface.
+
+    Load Your File: In the new window, click "Load File(s)" and select a CSV file that contains your sample list.
+
+    Specify Columns: The tool will ask you for two things:
+
+        The name of the column containing the sample IDs (GSMs).
+
+        The name of the column containing the labels (where 1 means case and 0 means control).
+
+    Link to a Platform: You will be asked to associate your sample list with a GPL platform that you have already loaded in the main window. Your loaded groups will now appear in the listbox.
+
+# Step 2: Set Up the Comparison
+
+Next, define what you want to compare.
+
+    Select Your Groups: Click on the groups in the listbox that you want to visualize.
+
+    Choose a Mode: Select one of the Comparison Modes. For example, you can compare your loaded groups directly against each other ("Compare Selected...Only") or compare them against the expression of a specific gene across an entire platform ("Compare Groups vs. Gene(s)...").
+
+    Enter a Gene: If your mode requires it, type a Gene Symbol (e.g., EGFR) into the entry box.
+
+# Step 3: Run the Analysis and View Plots
+
+Finally, generate and view your comparison.
+
+    Click "Plot & Analyze Distributions": The tool will gather all the necessary data and generate plots on the right side of the window.
+
+    Interpret the Results: You will see two types of plots:
+
+        Overlaid Density Plots: These show the overall shape and spread of the expression distributions for each group.
+
+        Overlaid Histograms: These provide a more detailed, frequency-based view of the data.
+
+Below the plots, a table will also show the results of a statistical test (Wilcoxon rank-sum), telling you if the differences between your groups are statistically significant.
+
+
+
+
+
+
 # 4. Generating and Interpreting Results
 
 The true power of BioGenVariate is unlocked when you analyze a region of interest from the gene expression plot. Simply clicking "Analyze LEFT Tail" or "Analyze RIGHT Tail" triggers a powerful backend cascade. The application automatically identifies statistically enriched tokens in the metadata of those specific samples, filters them for biological relevance, and clusters them using disease and tissue ontologies. This process generates a suite of visualizations, including a powerful Canonical Word Cloud where terms are colored by their ontological category (e.g., red for disease, green for tissue), providing an immediate, contextualized overview of the biological themes that define your sample set. All plots and detailed statistical tables are automatically saved to the NEW_RESULTS_ROOT directory for your records.
