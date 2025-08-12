@@ -5,7 +5,7 @@ GeoExplorer is a sophisticated, GUI-driven Python application designed for in-de
 The suite is engineered for researchers who need to identify relevant sample cohorts, analyze case/control groups, and explore the descriptive metadata associated with unique gene expression patterns. It excels at analyzing regions of interest in gene expression distributions (such as tails or specific bins) and generating insightful visualizations, including word clouds of biologically enriched tokens that are clustered into canonical terms based on ontology names like DOID and Uberon.
 
 
-🔬 #Core Features
+# Core Features 🔬
 
 - Intelligent Sample Extraction: Utilizes the entire GEOmetadb.sqlite database, loaded into memory for rapid querying, and applies a two-stage semantic and lexical filtering process to find the most relevant samples.
 
