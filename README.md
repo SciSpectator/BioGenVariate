@@ -1,5 +1,10 @@
 # GeoExplorer 
 
+GeoExplorer is a sophisticated, GUI-driven Python application designed for in-depth analysis of gene expression multispiecies data from the Gene Expression Omnibus (GEO). It provides a multi-step workflow to extract, filter, label, and analyze biological samples, moving beyond simple keyword searches to incorporate advanced semantic filtering, statistical analysis, and ontology-based natural language processing contextualization from sample descriptions.
+
+The suite is engineered for researchers who need to identify relevant sample cohorts from the vast GEO database, classify them into case/control groups, and explore the descriptive metadata associated with unique gene expression patterns.
+
+
 🔬 Core Features
 
 - Intelligent Sample Extraction: Utilizes the entire GEOmetadb.sqlite database, loaded into memory for rapid querying, and applies a two-stage semantic and lexical filtering process to find the most relevant samples.
