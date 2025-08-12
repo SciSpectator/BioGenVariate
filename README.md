@@ -33,13 +33,13 @@ Prerequisites
 
     Sufficient RAM to load GEOmetadb and GPL expression datasets into memory (>16 GB recommended).
 
-1. Clone the Repository
+# 1. Clone the Repository
 
 git clone https://github.com/your-username/GeoExplorer.git
 cd GeoExplorer
 
 
-2. Install Dependencies
+# 2. Install Dependencies
 
 It is highly recommended to use a virtual environment.
 
@@ -49,7 +49,8 @@ pip install -r requirements.txt
 
 
 The application will also download necessary NLTK data models (punkt, stopwords, wordnet) on first run.
-3. Required Data Files
+
+# 3. Required Data Files
 
 GeoExplorer requires several large data files to be placed in specific directories.
 
