@@ -192,22 +192,6 @@ All results are saved to the NEW_RESULTS_ROOT/ directory, which is created autom
 
             Contains all statistics (enriched tokens, bio-specific tokens, all p-values) as .csv.gz files.
             
-
-# Major Dependencies: 📚
-
-  PyTorch
-
-  Hugging Face Transformers
-
-  Pandas & NumPy
-
-  SciPy & Scikit-learn
-
-  Matplotlib & Seaborn
-
-  BERTopic
-
-  NetworkX
   
 
 # License: 📜
