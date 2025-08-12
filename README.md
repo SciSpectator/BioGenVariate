@@ -100,7 +100,7 @@ The true power of GeoExplorer is unlocked when you analyze a region of interest 
 
 
 
-📊 Workflow Overview:
+📊 # Workflow Overview:
 
   Load GPL Datasets: Use the buttons in the UI to load the desired platform expression datasets into memory.
 
@@ -115,7 +115,7 @@ The true power of GeoExplorer is unlocked when you analyze a region of interest 
 
   
 
-📁 Output Results File Structure:
+📁 # Output Results File Structure:
 
 All results are saved to the NEW_RESULTS_ROOT/ directory, which is created automatically.
 
@@ -136,7 +136,7 @@ All results are saved to the NEW_RESULTS_ROOT/ directory, which is created autom
             Contains all statistics (enriched tokens, bio-specific tokens, all p-values) as .csv.gz files.
             
 
-📚 Major Dependencies:
+📚 # Major Dependencies:
 
   PyTorch
 
@@ -153,6 +153,6 @@ All results are saved to the NEW_RESULTS_ROOT/ directory, which is created autom
   NetworkX
   
 
-📜 License:
+📜 # License:
 
 This project is licensed under the MIT License - see the LICENSE.md file for details.
