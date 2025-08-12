@@ -73,7 +73,7 @@ GeoExplorer requires several large data files to be placed in specific directori
         Update the self.model_dir and self.keywords_dir paths in the GeoWorkflowGUI class to point to their locations.
 
 
-🚀 Usage:
+🚀 Usage (How to Use GeoExplorer) :
 
 Once all dependencies are installed and data files are in place, run the main script from the project's root directory:
 
@@ -82,8 +82,21 @@ python geo_workflow_gui.py
 
 The main application window will launch, and you can begin the analysis workflow.
 
+# Tutorial:
 
-How to Use GeoExplorer:
+Using GeoExplorer is a straightforward process that guides you from a broad research question to specific, actionable insights. The workflow is divided into a few key phases.
+
+# 1.Initial Setup and Sample Extraction
+
+First, launch the application and load the necessary GPL platform data using the buttons in the main window. Once your data is in memory, you can begin to find your sample cohort. In the "GSE Extraction" section, define your search by providing a Platform Filter (e.g., GPL570) and comma-separated Filtering Tokens (e.g., breast cancer, liver tissue). Running the extraction will perform a deep semantic search and present you with a list of relevant studies. From this list, you can review and select the most relevant GSEs to move forward with your analysis.
+
+# 2. Labeling and In-Depth Analysis
+
+With your sample cohort selected, you can proceed to labeling. GeoExplorer offers both an Automatic Labeling mode, which uses a BioBERT model to classify samples based on "case" and "control" keywords you provide, and a Manual Labeling mode for expert annotation. After labeling, the core of the analysis begins in the Gene Distribution Explorer. Here, you can plot the expression distribution of any gene (e.g., TP53) on your chosen platform.
+
+# 3. Generating and Interpreting Results
+
+The true power of GeoExplorer is unlocked when you analyze a region of interest from the gene expression plot. Simply clicking "Analyze LEFT Tail" or "Analyze RIGHT Tail" triggers a powerful backend cascade. The application automatically identifies statistically enriched keywords in the metadata of those specific samples, filters them for biological relevance, and clusters them using disease and tissue ontologies. This process generates a suite of visualizations, including a powerful Canonical Word Cloud where terms are colored by their ontological category (e.g., red for disease, green for tissue), providing an immediate, contextualized overview of the biological themes that define your sample set. All plots and detailed statistical tables are automatically saved to the NEW_RESULTS_ROOT directory for your records.
 
 
 
