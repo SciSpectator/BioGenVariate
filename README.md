@@ -77,7 +77,7 @@ GeoExplorer requires several large data files to be placed in specific directori
         Update the self.model_dir and self.keywords_dir paths in the GeoWorkflowGUI class to point to their locations.
 
 
-# Usage (How to Use GeoExplorer) : 🚀
+# Usage (How to Use BioGenVariate) : 🚀
 
 Once all dependencies are installed and data files are in place, run the main script from the project's root directory:
 
