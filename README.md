@@ -124,10 +124,6 @@ The true power of BioGenVariate is unlocked when you analyze a region of interes
 
 
 
-
-
-
-
 # Workflow Overview: 📊 
 
   Load GPL Datasets: Use the buttons in the UI to load the desired platform expression datasets into memory.
