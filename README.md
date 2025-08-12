@@ -100,9 +100,9 @@ Using BioGenVariate is a straightforward process that guides you from a broad re
 
 This step helps you find the specific data you need from GEO. In the "GSE Extraction" section, simply fill in the two options:
 
-    Platform Filter: Tell BioGenVariate which microarray platform to search, like GPL570.
+# Platform Filter: Tell BioGenVariate which microarray platform to search, like GPL570.
 
-    Filtering Tokens: Type in the keywords for your research topic, like liver,skin,  pancreatic cancer.
+# Filtering Tokens: Type in the keywords for your research topic, like liver,skin,  pancreatic cancer.
 
 After you click "Run GSE Extraction," a new window will pop up showing a table of all matching studies (GSEs). Here, you can review the keywords and sample counts for each study. You then have a choice: you can select only the specific studies you want to analyze further, or you can keep them all. Once you confirm your selection, a CSV file containing all the detailed sample (GSM) information from your chosen studies is automatically saved to the results folder.
 
@@ -113,9 +113,9 @@ Step 2: Group Your Samples
 
 After finding your data, this step lets you sort the samples into groups, like 'case' vs. 'control'. You have two options:
 
-    Automatic Labeling: Choose this if you want the tool to sort the samples for you. It will ask you for keywords that describe your "case" group (e.g., cancer tissue, malignant) and your "control" group (e.g., normal tissue, healthy). The AI will then automatically label each sample.
+# Automatic Labeling: Choose this if you want the tool to sort the samples for you. It will ask you for keywords that describe your "case" group (e.g., cancer tissue, malignant) and your "control" group (e.g., normal tissue, healthy). The AI will then automatically label each sample.
 
-    Manual Labeling: Choose this if you want to sort each sample yourself. A window will pop up for every sample, showing you its details so you can decide whether to label it as "Case," "Control," or "Skip."
+# Manual Labeling: Choose this if you want to sort each sample yourself. A window will pop up for every sample, showing you its details so you can decide whether to label it as "Case," "Control," or "Skip."
 
 
 
