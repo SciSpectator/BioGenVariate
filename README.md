@@ -35,8 +35,9 @@ Prerequisites
 
 # 1. Clone the Repository
 
-git clone https://github.com/your-username/GeoExplorer.git
-cd GeoExplorer
+git clone https://github.com/your-SciSpectator/BioGenVariate.git
+
+cd BioGenVariate
 
 
 # 2. Install Dependencies
