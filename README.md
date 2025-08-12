@@ -82,6 +82,11 @@ python geo_workflow_gui.py
 
 The main application window will launch, and you can begin the analysis workflow.
 
+
+How to Use GeoExplorer:
+
+
+
 📊 Workflow Overview:
 
   Load GPL Datasets: Use the buttons in the UI to load the desired platform expression datasets into memory.
@@ -93,9 +98,11 @@ The main application window will launch, and you can begin the analysis workflow
   Run Step 2 (Labeling): Choose either "Automatic" or "Manual" labeling to classify the samples from the selected GSEs into case/control groups.
 
   Analyze in Gene Explorer: Launch the "Gene Distribution Explorer", select genes and platforms, and click "Plot Distributions". From there, you can interactively analyze tails or bins to generate word clouds, cluster graphs, and statistical reports.
+
+
   
 
-📁 Results File Structure:
+📁 Output Results File Structure:
 
 All results are saved to the NEW_RESULTS_ROOT/ directory, which is created automatically.
 
