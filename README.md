@@ -94,9 +94,23 @@ Using GeoExplorer is a straightforward process that guides you from a broad rese
 
 First, launch the application and load the necessary GPL platform data using the buttons in the main window. Once your data is in memory, you can begin to find your sample cohort. In the "GSE Extraction" section, define your search by providing a Platform Filter (e.g., GPL570) and comma-separated Filtering Tokens (e.g., breast cancer, liver tissue). Running the extraction will perform a deep semantic search and present you with a list of relevant studies. From this list, you can review and select the most relevant GSEs to move forward with your analysis.
 
+<img width="1023" height="999" alt="Screen1" src="https://github.com/user-attachments/assets/05a1a592-29ac-41e3-afe5-5e4bee7b6a3a" />
+
+
+
+
+
+
 # 2. Labeling and In-Depth Analysis
 
-With your sample cohort selected, you can proceed to labeling. GeoExplorer offers both an Automatic Labeling mode, which uses a BioBERT model to classify samples based on "case" and "control" keywords you provide, and a Manual Labeling mode for expert annotation. After labeling, the core of the analysis begins in the Gene Distribution Explorer. Here, you can plot the expression distribution of any gene (e.g., TP53) on your chosen platform.
+With your sample cohort selected, you can proceed to labeling. BioGenVariate offers both an Automatic Labeling mode, which uses a BioBERT model to classify samples based on "case" and "control" keywords you provide, and a Manual Labeling mode for expert annotation. After labeling, the core of the analysis begins in the Gene Distribution Explorer. Here, you can plot the expression distribution of any gene (e.g., TP53) on your chosen platform.
+
+
+
+
+
+
+
 
 # 3. Generating and Interpreting Results
 
