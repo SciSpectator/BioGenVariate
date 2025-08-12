@@ -92,29 +92,38 @@ Using GeoExplorer is a straightforward process that guides you from a broad rese
 
 # 1.Initial Setup and Sample Extraction
 
-First, launch the application and load the necessary GPL platform data using the buttons in the main window. Once your data is in memory, you can begin to find your sample cohort. In the "GSE Extraction" section, define your search by providing a Platform Filter (e.g., GPL570) and comma-separated Filtering Tokens (e.g., breast cancer, liver tissue). Running the extraction will perform a deep semantic search and present you with a list of relevant studies. From this list, you can review and select the most relevant GSEs to move forward with your analysis.
+<img width="1468" height="958" alt="gse_extraction2" src="https://github.com/user-attachments/assets/b91b4b97-b2a9-4c20-9110-91582553ed72" />
 
-<img width="1023" height="999" alt="Screen1" src="https://github.com/user-attachments/assets/05a1a592-29ac-41e3-afe5-5e4bee7b6a3a" />
-
-
+<img width="829" height="668" alt="gse_extraction" src="https://github.com/user-attachments/assets/3f6a139c-8f81-440d-9ac6-44f7d8d5e92d" />
 
 
 
+# 2. Gene Distribution Explorer
 
-# 2. Labeling and In-Depth Analysis
 
-With your sample cohort selected, you can proceed to labeling. BioGenVariate offers both an Automatic Labeling mode, which uses a BioBERT model to classify samples based on "case" and "control" keywords you provide, and a Manual Labeling mode for expert annotation. After labeling, the core of the analysis begins in the Gene Distribution Explorer. Here, you can plot the expression distribution of any gene (e.g., TP53) on your chosen platform.
-
+<img width="1329" height="836" alt="Gene_Distribution_Explorer" src="https://github.com/user-attachments/assets/f0d160b1-7707-4173-8d43-29bf1db65e6f" />
+<img width="1909" height="1079" alt="DistributionExplorer" src="https://github.com/user-attachments/assets/610dfef9-3db6-4a68-8cd2-90f6a58ccbeb" />
 
 
 
 
 
 
+# 3. Compare Distributions
+<img width="1594" height="987" alt="Compare_Distributions" src="https://github.com/user-attachments/assets/50bff61a-b99e-4255-b6ee-9f90c1f618a2" />
 
-# 3. Generating and Interpreting Results
+<img width="1340" height="911" alt="Compare_Distributions2" src="https://github.com/user-attachments/assets/21488a1e-b263-45c9-a2ec-9fcc9ab44d10" />
 
-The true power of GeoExplorer is unlocked when you analyze a region of interest from the gene expression plot. Simply clicking "Analyze LEFT Tail" or "Analyze RIGHT Tail" triggers a powerful backend cascade. The application automatically identifies statistically enriched keywords in the metadata of those specific samples, filters them for biological relevance, and clusters them using disease and tissue ontologies. This process generates a suite of visualizations, including a powerful Canonical Word Cloud where terms are colored by their ontological category (e.g., red for disease, green for tissue), providing an immediate, contextualized overview of the biological themes that define your sample set. All plots and detailed statistical tables are automatically saved to the NEW_RESULTS_ROOT directory for your records.
+
+
+# 4. Generating and Interpreting Results
+
+The true power of BioGenVariate is unlocked when you analyze a region of interest from the gene expression plot. Simply clicking "Analyze LEFT Tail" or "Analyze RIGHT Tail" triggers a powerful backend cascade. The application automatically identifies statistically enriched tokens in the metadata of those specific samples, filters them for biological relevance, and clusters them using disease and tissue ontologies. This process generates a suite of visualizations, including a powerful Canonical Word Cloud where terms are colored by their ontological category (e.g., red for disease, green for tissue), providing an immediate, contextualized overview of the biological themes that define your sample set. All plots and detailed statistical tables are automatically saved to the NEW_RESULTS_ROOT directory for your records.
+
+
+
+
+
 
 
 
