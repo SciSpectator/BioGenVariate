@@ -17,6 +17,4 @@ The suite is engineered for researchers who need to identify relevant sample coh
 
 - Interactive Gene Distribution Explorer: A powerful interface to plot expression distributions, interactively select sample tails or bins, and trigger deep-dive analysis on those subsets.
 
-- Automated Batch Processing: Includes functionality to automate tail analysis for all genes on a platform, complete with a negative control run (shuffled metadata) to validate findings.
-
-- Structured & Reproducible Results: Automatically generates a comprehensive set of plots, graphs, and data tables for each analysis, saved in a logically structured, timestamped directory.
+- Structured & Reproducible Results: Automatically generates a comprehensive results ( set of plots, graphs, and data tables for each analysis ) , saved in a logically structured, timestamped directory.
