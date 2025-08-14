@@ -93,43 +93,103 @@ Using BioGenVariate is a straightforward process that guides you from a broad re
 
 # 1.Initial Setup and Sample Extraction
 
-<img width="1468" height="958" alt="gse_extraction2" src="https://github.com/user-attachments/assets/b91b4b97-b2a9-4c20-9110-91582553ed72" />
+# Step 1: Find Your Samples
 
-<img width="829" height="668" alt="gse_extraction" src="https://github.com/user-attachments/assets/3f6a139c-8f81-440d-9ac6-44f7d8d5e92d" />
+This initial step is designed to find relevant studies and samples for your research. Instead of querying the GEO website directly, BioGenVariate performs a rapid search of a local GEOmetadb.sqlite.gz file. This file is a comprehensive database containing all the metadata from GEO, allowing for powerful and fast offline filtering.
 
+# Step 1: Find Your Samples
 
-This step helps you find the specific data you need from GEO. In the "GSE Extraction" section, simply fill in the two options:
+In the main application window, locate the "Step 1: GSE Extraction" section. Configure your search using the following parameters:
 
-# Step 1: Find your samples
+<img width="830" height="224" alt="image" src="https://github.com/user-attachments/assets/3e99239d-4e6c-460a-a518-127ec8e1ee4b" />
 
-Platform Filter: Tell BioGenVariate which microarray platform to search, like GPL570.
+Once you have configured your search, click "Run GSE Extraction". The process will begin in the background, and you can monitor its progress via the progress bar and the log output window.
 
-Filtering Tokens: Type in the keywords for your research topic, like liver,skin,  pancreatic cancer.
+# Step 1.5: Interactively Review and Refine Your Results
 
-After you click "Run GSE Extraction," a new window will pop up showing a table of all matching studies (GSEs). Here, you can review the keywords and sample counts for each study. You then have a choice: you can select only the specific studies you want to analyze further, or you can keep them all. Once you confirm your selection, a CSV file containing all the detailed sample (GSM) information from your chosen studies is automatically saved to the results folder.
+Upon completion, a new "Step 1 Results: Review and Select GSEs" window will automatically open. This powerful interface is designed to help you quickly validate the relevance of each study (GSE) found by the tool.
 
+The window is split into two panes:
 
+Left Pane (GSE List): This is a table of all studies that contained at least one of your keywords. The crucial "Matching Tokens" column shows you exactly which of your keywords were found within the samples of that study, giving you an immediate sense of its relevance. You can select one or multiple GSEs from this list to inspect and keep.
 
-# Step 2: Group Your Samples
+Right Pane (Details and Keyword Highlighting): When you click on a GSE in the left pane, this area populates with the combined titles, descriptions, and characteristics from all of its samples. To make validation effortless, all of your original search tokens are highlighted in red within the text, so you can instantly see them in their proper context.
 
-After finding your data, this step lets you sort the samples into groups, like 'case' vs. 'control'. You have two options:
+Review the studies and select all the ones you wish to include in your final dataset. When you are finished, click the "Save Kept GSEs and Continue to Step 2" button.
 
-Automatic Labeling: Choose this if you want the tool to sort the samples for you. It will ask you for keywords that describe your "case" group (e.g., cancer tissue, malignant) and your "control" group (e.g., normal tissue, healthy). The AI will then automatically label each sample.
+# Saving results from Step 1:
 
-Manual Labeling: Choose this if you want to sort each sample yourself. A window will pop up for every sample, showing you its details so you can decide whether to label it as "Case," "Control," or "Skip."
+BioGenVariate automatically organizes your results for you. It creates a new directory inside the NEW_RESULTS_ROOT folder. This new folder is named using your search tokens and a timestamp for easy identification (e.g., pancreatic_cancer_pdac_20250814_132738).
 
+Inside this folder, the tool saves the detailed sample (GSM) metadata from your selected studies. To maintain clarity, it creates separate CSV files for each unique token-platform combination. For example, you might get files like:
 
+- pancreatic_cancer_GPL570_gse.csv
 
+- melanoma_GPL570_gse.csv
 
+Finally, the main application window will update to show the selected GSEs, indicating that the data is now ready for the classification stage.
 
+# Step 2: Grouping Your Samples (Case/Control Labeling):
+
+After extracting your data, the next critical step is to classify each individual sample (GSM) into meaningful biological groups, such as 'case' vs. 'control'. BioGenVariate offers two flexible modes for this task. You can either use the data you just filtered in Step 1 or load your own dataset using the "Load External File" button.
+
+# Option 1: Manual Labeling ( For Maximum Precision )
+
+This mode gives you complete, sample-by-sample control over the classification process.
+
+1. Click the "Manual Labeling" button.
+
+2. A dialog window will appear for the first sample, displaying all of its associated metadata (title, characteristics, etc.).
+
+3. Based on the information, choose one of the three options:
+
+- Case (1): Assigns the sample to the 'case' group (e.g., diseased, treated).
+
+- Control (0): Assigns the sample to the 'control' group (e.g., healthy, untreated).
+
+- Skip (-1): Excludes the sample from the final labeled dataset.
+
+4. The next sample will appear automatically. Repeat this process until all samples have been reviewed.
+
+# Option 2: Automatic Labeling ( For Speed and Scalability )
+
+This mode uses an advanced, platform-aware AI to classify samples. It's ideal for large datasets where manual labeling is impractical and long. The key feature is its ability to use different keywords for different microarray platforms.
+
+1. Click the "Automatic Labeling" button
+
+2. BioGenVariate will first identify all the unique platforms (e.g., GPL570, GPL1261 ) present in your dataset
+
+3. It will then open a series of interactive dialogs, one for each platform.
+
+4. Each dialog presents a two-pane view where you can browse the samples belonging to that specific platform to understand their context.
+
+5. At the bottom, enter the keywords that define your groups specifically for that platform.
+
+- Case Keywords: Words that identify the 'case' group (e.g., tumor, carcinoma, treated).
+
+- Control Keywords: Words that identify the 'control' group (e.g., normal, healthy, untreated).
+
+6. Click "Set Keywords & Continue to Next Platform". Once you have provided keywords for the final platform, click "Finish & Classify All Samples".
+
+For example, your 'control' keywords for a human study on GPL570 might be healthy donor, while for a mouse study on GPL1261 they might be wild-type. BioGenVariate handles this context seamlessly.
+
+# Saving Your Labeled Data:
+
+Whether you chose manual or automatic labeling, the final step is saving. The tool will add a new column to your data (User_Label or Predicted_Label) containing the 0s and 1s.
+
+The labeled datasets are saved as new CSV files inside the same results folder created during Step 1. To keep your results organized, the tool saves a separate labeled file for each platform, named like:
+
+- step2_GPL570_auto_labeled.csv
+
+- step2_GPL1261_manual_labeled.csv
+
+Your data is now fully extracted, filtered, and classified, ready for downstream statistical analysis and visualization within the BioGenVariate suite.
 
 
 
 # 2. Gene Distribution Explorer
 
 
-<img width="1329" height="836" alt="Gene_Distribution_Explorer" src="https://github.com/user-attachments/assets/f0d160b1-7707-4173-8d43-29bf1db65e6f" />
-<img width="1909" height="1079" alt="DistributionExplorer" src="https://github.com/user-attachments/assets/610dfef9-3db6-4a68-8cd2-90f6a58ccbeb" />
 
 
 This tool is for deep-dive analysis. It lets you see how a gene's expression is distributed across your samples and then automatically analyze the metadata of interesting groups (like those with very high or very low expression).
