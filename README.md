@@ -186,58 +186,36 @@ The labeled datasets are saved as new CSV files inside the same results folder c
 Your data is now fully extracted, filtered, and classified, ready for downstream statistical analysis and visualization within the BioGenVariate suite.
 
 
+# 2. The Gene Distribution Explorer
 
-# 2. Gene Distribution Explorer
-
-
-
-
-This tool is for deep-dive analysis. It lets you see how a gene's expression is distributed across your samples and then automatically analyze the metadata of interesting groups (like those with very high or very low expression).
+This tool is designed for deep-dive analysis. It allows you to visualize the expression distribution of specific genes from the loaded platforms and then perform a comprehensive, automated analysis of the metadata associated with interesting sample groups (e.g., those with very high or very low expression). This process uncovers the biological context—such as diseases, tissues, or cell types—linked to specific gene expression patterns.
 
 # Step 1: Plot Your Gene's Distribution
 
+First, you need to visualize the expression data for your gene(s) of interest.
 
-First, you need to visualize the expression data.
+1. Open the Explorer: Click the "Show Gene Distribution" button in the "Analysis Tools" section of the main window.
 
-Open the Explorer: Click the "Gene Distribution Explorer" button in the main window.
+2.Select Platforms: In the new window that appears, check the boxes for one or more loaded platforms you wish to analyze (e.g., GPL570, GPL1261). 
 
-Select Your Data: In the new window, check the box for the platform you are analyzing (e.g., GPL570).
+3.Enter Your Gene(s): Type the official symbol(s) for the gene(s) you are interested in into the "Gene Symbol(s)" box. You can enter multiple genes separated by commas (e.g., TP53, EGFR). 
 
-Enter Your Gene: Type the official symbol for the gene you are interested in into the "Gene Symbol(s)" box (e.g., TP53).
+4. Plot Distributions: Click the "Plot Distributions" button. A grid of histograms will appear in the window below. Each plot shows the full expression pattern for a single gene on a single platform.
 
-Click "Plot Distributions": A histogram will appear, showing you the full expression pattern for that gene across all of your samples.
+# Step 2: Interactively Analyze a Region of Interest
 
-# Step 2: Choose a Region to Analyze
+Now you can specify in BioGenVariate which group of samples you want to investigate.
 
+# Primary Method: Click and Drag Selection
 
-Now, you can tell BioGenVariate which group of samples you want to investigate. You have a few options:
-
-Analyze the Tails: Click the "Analyze LEFT Tail" button to automatically select all samples with the lowest expression, or "Analyze RIGHT Tail" for the highest. This is the most common and powerful feature.
-
-Analyze a Specific Bin: You can also click directly on any bar in the histogram to analyze only the samples within that specific expression range.
-
-Analyze Everything: Click "Analyze Full Distribution" to analyze all samples for the selected gene together.
-
-# Step 3: Get Your Results
-
-
-Once you choose a region, the analysis starts automatically. BioGenVariate will find the keywords that are most common in the metadata of your selected samples and then cluster them into meaningful biological themes. New windows will pop up showing you:
-
-A Canonical Word Cloud: This shows the most important biological terms, colored by category (red for disease, green for tissue).
-
-A Network Graph: This visualizes how different keywords are related to each other.
-
-All of these plots and the detailed data tables are automatically saved to a new folder in your NEW_RESULTS_ROOT directory, so you can use them directly in your research.
-
+The most powerful way to analyze a group is to click and drag your mouse directly on any histogram. This will draw a rectangle selector. Once you release the mouse button, BioGenVariate will automatically begin analyzing all the samples that fall within the expression range you selected. This gives you precise control to investigate any part of the distribution—the tails, the center, or any specific peak.
 
 
 
 
 
 # 3. Compare Distributions
-<img width="1594" height="987" alt="Compare_Distributions" src="https://github.com/user-attachments/assets/50bff61a-b99e-4255-b6ee-9f90c1f618a2" />
 
-<img width="1340" height="911" alt="Compare_Distributions2" src="https://github.com/user-attachments/assets/21488a1e-b263-45c9-a2ec-9fcc9ab44d10" />
 
 
 
