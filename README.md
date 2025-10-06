@@ -63,67 +63,23 @@ All analyses generate a comprehensive set of plots, graphs, and data tables. Res
 
 # Installation & Setup ⚙️
 
-Prerequisites
-
-    Python 3.8+
-
-    PyTorch (with CUDA support recommended for performance)
-
-    Sufficient RAM to load GEOmetadb and GPL expression datasets into memory (>16 GB recommended).
-
-# 1. Clone the Repository
-
-git clone https://github.com/your-SciSpectator/BioGenVariate.git
-
-cd BioGenVariate
 
 
-# 2. Install Dependencies
-
-It is highly recommended to use a virtual environment.
-
-python -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-pip install -r requirements.txt
 
 
-The application will also download necessary NLTK data models (punkt, stopwords, wordnet) on first run.
 
-# 3. Required Data Files
-
-GeoExplorer requires several large data files to be placed in specific directories.
-
-    GEOmetadb.sqlite.gz:
-
-        Action: Download from GEOmetadb or another source.
-
-        Location: Place this file in the root directory of the project.
-
-    GPL Expression & Token Data:
-
-        The application expects a directory structure for each platform's data. Create a main data directory (e.g., /home/user/GEOMETADB_TOKENS_PLATFORMS) and update the path in the GeoWorkflowGUI class constructor.
-
-        Inside this directory, create a sub-folder for each platform (e.g., GPL570, GPL96).
-
-        Expression Data: Place the gzipped CSV expression matrix for each platform in its respective folder (e.g., GPL570/gpl570_all_samples_normalized.csv.gz).
-
-        Token Data: Place the pre-computed token file for each platform in its folder (e.g., GPL570/geometadb_tokens_GPL570.csv.gz).
-
-    Fine-tuned Model & Keywords:
-
-        The fine-tuned PubMedBERT model and biomedical keyword corpus are required for the AttentionSeeker functionality.
-
-        Update the self.model_dir and self.keywords_dir paths in the GeoWorkflowGUI class to point to their locations.
 
 
 # Usage (How to Use BioGenVariate) : 🚀
 
 Once all dependencies are installed and data files are in place, run the main script from the project's root directory:
 
-python geo_workflow_gui.py
+
+python3 geo_workflow_gui.py
 
 
 The main application window will launch, and you can begin the analysis workflow.
+
 
 # Tutorial:
 
