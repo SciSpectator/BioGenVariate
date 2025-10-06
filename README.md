@@ -2,10 +2,9 @@
 
 <img width="2048" height="2048" alt="Gemini_Generated_Image_liw558liw558liw5" src="https://github.com/user-attachments/assets/e2061a0f-d039-4e6f-943c-5bce38670a65" />
 
+GenVariate is a sophisticated, GUI-driven Python application designed for the in-depth analysis of gene expression data from the Gene Expression Omnibus (GEO). It provides a powerful, multi-step workflow to extract, filter, label, and analyze biological samples. The application moves beyond simple keyword searches by integrating a local AI agent, powered by the gpt-oss:20b open-source model, for automated metadata classification and features a unique, interactive tool for deep-dive analysis of specific gene expression distributions.
 
-BioGenVariate is a sophisticated, GUI-driven Python application designed for in-depth analysis of gene expression multispiecies data from the Gene Expression Omnibus (GEO). It provides a multi-step workflow to extract, filter, label, and analyze biological samples, moving beyond simple keyword searches to incorporate advanced semantic filtering, statistical analysis, and ontology-based natural language processing contextualization from sample descriptions.
-
-The suite is engineered for researchers who need to identify relevant sample cohorts, analyze case/control groups, and explore the descriptive metadata associated with unique gene expression patterns. It excels at analyzing regions of interest in gene expression distributions (such as tails or specific bins) and generating insightful visualizations, including word clouds of biologically enriched tokens that are clustered into canonical terms based on ontology names like DOID and Uberon.
+The suite is engineered for researchers who need to identify relevant experimental cohorts from the vast GEO database, classify samples using either AI-assisted or manual methods, and explore the descriptive metadata associated with unique gene expression patterns. It excels at analyzing user-defined regions of interest within a gene's expression distribution (such as the high or low-expression tails) and generating insightful, publication-ready visualizations and data tables.
 
 
 # Core Features 🔬
