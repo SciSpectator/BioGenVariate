@@ -10,47 +10,53 @@ The suite is engineered for researchers who need to identify relevant experiment
 
 # Core Features 🔬
 
-    Comprehensive Experiment Extraction: Utilizes the entire GEOmetadb.sqlite database, loaded into memory for rapid, multi-threaded querying. It performs a two-stage filtering process based on user-defined keywords to search metadata across both entire experiments (GSE) and individual samples (GSM).
+# Comprehensive Experiment Extraction: Utilizes the entire GEOmetadb.sqlite database, loaded into memory for rapid, multi-threaded querying. It performs a two-stage filtering process based on user-defined keywords to search metadata across both entire experiments (GSE) and individual samples (GSM).
 
-    🧬 Multi-Species & Custom Dataset Compatibility: While GenVariate includes quick-load buttons for common human and mouse platforms from GEO, its capabilities extend far beyond. The application is designed for flexibility, allowing users to load any custom dataset from a local file. This enables the analysis and comparison of data from different microarray or sequencing platforms, other species, or even private, non-public experimental results.
+# 🧬 Multi-Species & Custom Dataset Compatibility: While GenVariate includes quick-load buttons for common human and mouse platforms from GEO, its capabilities extend far beyond. The application is designed for flexibility, allowing users to load any custom dataset from a local file. This enables the analysis and comparison of data from different microarray or sequencing platforms, other species, or even private, non-public experimental results.
 
     Dual-Mode Sample Labeling: Offers two distinct workflows for sample classification:
 
-        🤖 AI Agent-Powered Labeling: Leverages a local AI agent via the Ollama service. This agent, running the gpt-oss:20b open-source model, analyzes sample metadata to automatically extract structured information, including Condition, Tissue, Age, Treatment, and Treatment Time. This process runs in parallel to efficiently classify large numbers of samples.
+# 🤖 AI Agent-Powered Labeling: Leverages a local AI agent via the Ollama service. This agent, running the gpt-oss:20b open-source model, analyzes sample metadata to automatically extract structured information, including Condition, Tissue, Age, Treatment, and Treatment Time. This process runs in parallel to efficiently classify large numbers of samples.
 
-        ✍️ Advanced Manual Labeling: An interactive dialog allows for expert-driven, sample-by-sample classification with customizable labels, ensuring accuracy and control over the final dataset.
+# ✍️ Advanced Manual Labeling: An interactive dialog allows for expert-driven, sample-by-sample classification with customizable labels, ensuring accuracy and control over the final dataset.
 
-    Interactive Gene Distribution Explorer: A powerful visualization tool to plot and investigate expression distributions for any gene across multiple platforms. Key features include:
+# Interactive Gene Distribution Explorer: A powerful visualization tool to plot and investigate expression distributions for any gene across multiple platforms. Key features include:
+
 
         Statistical Classification: Automatically analyzes and classifies the shape of each gene's distribution (e.g., Normal, Bimodal, Lognormal, Cauchy).
+        
 
         Interactive Range Selection: Users can draw a rectangle directly on any histogram to select a specific expression range for further analysis.
 
-    AI-Driven Analysis of Selected Ranges: This is the cornerstone feature of GenVariate. Selecting an expression range on a plot triggers a deep-dive analysis on the samples within that subset:
+# AI-Driven Analysis of Selected Ranges: This is the cornerstone feature of GenVariate. Selecting an expression range on a plot triggers a deep-dive analysis on the samples within that subset:
 
         The application fetches the full metadata for the selected samples.
+        
 
         It runs the AI agent labeling pipeline specifically on this subset to characterize them.
+        
 
         It generates new plots showing the distribution of AI-classified groups (e.g., 'Control' vs. 'Disease') within the selected range, providing immediate biological context to expression patterns.
 
-    Advanced Distribution Comparison Tool: A dedicated window for comparing expression profiles between different groups. It supports:
+# Advanced Distribution Comparison Tool: A dedicated window for comparing expression profiles between different groups. It supports:
 
         Loading custom case/control sample lists from external files.
+        
 
         Plotting user-defined groups against the entire platform's background distribution for a specific gene or for all genes combined.
+        
 
         Performing and displaying pairwise Wilcoxon rank-sum statistical tests to quantify differences between distributions.
 
-    Structured & Reproducible Results: All analyses generate a comprehensive set of plots, graphs, and data tables.
+# Structured & Reproducible Results: All analyses generate a comprehensive set of plots, graphs, and data tables.
 
         Results from each step are automatically saved into a logically structured, timestamped directory for easy tracking and reproducibility.
+        
 
         Interactive data tables provide direct web links to the corresponding GSM/GSE pages on the NCBI GEO website.
+        
 
         All generated plots and figures can be exported in multiple formats, including PNG, PDF, and SVG.
-
-        
 
 
 # Installation & Setup ⚙️
