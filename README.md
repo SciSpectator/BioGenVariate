@@ -74,41 +74,59 @@ Using GenVariate is a straightforward process that guides you from a broad resea
 
 # 1.1 Initial Setup and Sample Extraction
 
-# Step 1: Find Your Samples
 
-This initial step is designed to find relevant studies and samples for your research. Instead of querying the GEO website directly, BioGenVariate performs a rapid search of a local GEOmetadb.sqlite.gz file. This file is a comprehensive database containing all the metadata from GEO, allowing for powerful and fast offline filtering.
+# Step 1: Extract Relevant Experiments
 
-# Step 1: Find Your Samples
+
+This initial step is designed to find relevant studies and samples for your research. Instead of querying the GEO website directly, GenVariate performs a rapid search of a local GEOmetadb.sqlite.gz file. This file is a comprehensive database containing all the metadata from GEO, allowing for powerful and fast offline filtering.
 
 In the main application window, locate the "Step 1: GSE Extraction" section. Configure your search using the following parameters:
 
-<img width="830" height="224" alt="image" src="https://github.com/user-attachments/assets/3e99239d-4e6c-460a-a518-127ec8e1ee4b" />
+    Platform Filter (optional): Enter a comma-separated list of platform IDs (e.g., GPL570,GPL96) to restrict your search to specific microarray or sequencing technologies. Leave this blank to search across all platforms.
+
+    Filtering Tokens: This is the core of your search. Enter a comma-separated list of keywords that describe your research interest (e.g., alzheimer disease,control,brain). The tool will search for these terms in both the overall study (GSE) descriptions and the detailed individual sample (GSM) metadata.
 
 Once you have configured your search, click "Run GSE Extraction". The process will begin in the background, and you can monitor its progress via the progress bar and the log output window.
 
+
 # Step 1.5: Interactively Review and Refine Your Results
 
-Upon completion, a new "Step 1 Results: Review and Select GSEs" window will automatically open. This powerful interface is designed to help you quickly validate the relevance of each study (GSE) found by the tool.
+
+Upon completion, a new "Step 1.5: Review, Analyze, and Select GSEs" window will automatically open. This powerful interface is designed to help you quickly validate the relevance of each study (GSE) found by the tool.
 
 The window is split into two panes:
 
-Left Pane (GSE List): This is a table of all studies that contained at least one of your keywords. The crucial "Matching Tokens" column shows you exactly which of your keywords were found within the samples of that study, giving you an immediate sense of its relevance. You can select one or multiple GSEs from this list to inspect and keep.
+    Left Pane (GSE List): This is a table of all studies that contained at least one of your keywords. It provides a concise summary, including the platform, the specific "Matching Tokens" found, and a count of samples that were "Direct Matches" versus those that are just associated with the study. This allows you to immediately gauge the relevance of each result. You can select one or more GSEs from this list to inspect and keep.
 
-Right Pane (Details and Keyword Highlighting): When you click on a GSE in the left pane, this area populates with the combined titles, descriptions, and characteristics from all of its samples. To make validation effortless, all of your original search tokens are highlighted in red within the text, so you can instantly see them in their proper context.
+    Right Pane (Details and Keyword Highlighting): When you click on a GSE in the left pane, this area populates with the combined titles, descriptions, and characteristics from its samples. To make validation effortless, all of your original search tokens are highlighted, so you can instantly see them in their proper context.
 
-Review the studies and select all the ones you wish to include in your final dataset. When you are finished, click the "Save Kept GSEs and Continue to Step 2" button.
+Review the studies and select all the ones you wish to include in your final dataset by clicking on them in the left pane (use Ctrl-Click or Shift-Click to select multiple). When you are finished, click the "Save Kept GSEs and Continue to Step 2" button.
 
-# Saving results from Step 1:
+Saving and Finalizing Your Selection
 
-BioGenVariate automatically organizes your results for you. It creates a new directory inside the NEW_RESULTS_ROOT folder. This new folder is named using your search tokens and a timestamp for easy identification (e.g., pancreatic_cancer_pdac_20250814_132738).
+GenVariate automatically organizes your results for you.
 
-Inside this folder, the tool saves the detailed sample (GSM) metadata from your selected studies. To maintain clarity, it creates separate CSV files for each unique token-platform combination. For example, you might get files like:
+    Directory: A new directory is created inside the NEW_RESULTS_ROOT folder. This new folder is named using your search tokens, platform filter, and a timestamp for easy identification (e.g., alzheimer_GPL570_20251007_154500).
 
-- pancreatic_cancer_GPL570_gse.csv
+    File: Inside this folder, the tool saves a single, comprehensive CSV file named step1_selected_samples.csv. This file contains the detailed metadata for every sample from all the studies you selected.
 
-- melanoma_GPL570_gse.csv
+Finally, the main application window will update to show the selected GSE IDs, confirming that your curated dataset is now ready for the labeling and analysis stages in Step 2.
 
-Finally, the main application window will update to show the selected GSEs, indicating that the data is now ready for the classification stage.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Step 2: Grouping Your Samples (Case/Control Labeling):
 
