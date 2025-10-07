@@ -67,26 +67,12 @@ All analyses generate a comprehensive set of plots, graphs, and data tables. Res
 
 
 
+# 1.Tutorial:
+
+Using GenVariate is a straightforward process that guides you from a broad research question to specific, actionable insights. The workflow is divided into a few key phases.
 
 
-
-
-# Usage (How to Use BioGenVariate) : 🚀
-
-Once all dependencies are installed and data files are in place, run the main script from the project's root directory:
-
-
-python3 geo_workflow_gui.py
-
-
-The main application window will launch, and you can begin the analysis workflow.
-
-
-# Tutorial:
-
-Using BioGenVariate is a straightforward process that guides you from a broad research question to specific, actionable insights. The workflow is divided into a few key phases.
-
-# 1.Initial Setup and Sample Extraction
+# 1.1 Initial Setup and Sample Extraction
 
 # Step 1: Find Your Samples
 
