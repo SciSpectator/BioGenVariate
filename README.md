@@ -112,6 +112,7 @@ GenVariate automatically organizes your results for you.
 
 Finally, the main application window will update to show the selected GSE IDs, confirming that your curated dataset is now ready for the labeling and analysis stages in Step 2.
 
+# Step 2: 
 
 
 
@@ -125,64 +126,6 @@ Finally, the main application window will update to show the selected GSE IDs, c
 
 
 
-
-
-
-# Step 2: Grouping Your Samples (Case/Control Labeling):
-
-After extracting your data, the next critical step is to classify each individual sample (GSM) into meaningful biological groups, such as 'case' vs. 'control'. BioGenVariate offers two flexible modes for this task. You can either use the data you just filtered in Step 1 or load your own dataset using the "Load External File" button.
-
-# Option 1: Manual Labeling ( For Maximum Precision )
-
-This mode gives you complete, sample-by-sample control over the classification process.
-
-1. Click the "Manual Labeling" button.
-
-2. A dialog window will appear for the first sample, displaying all of its associated metadata (title, characteristics, etc.).
-
-3. Based on the information, choose one of the three options:
-
-- Case (1): Assigns the sample to the 'case' group (e.g., diseased, treated).
-
-- Control (0): Assigns the sample to the 'control' group (e.g., healthy, untreated).
-
-- Skip (-1): Excludes the sample from the final labeled dataset.
-
-4. The next sample will appear automatically. Repeat this process until all samples have been reviewed.
-
-# Option 2: Automatic Labeling ( For Speed and Scalability )
-
-This mode uses an advanced, platform-aware AI to classify samples. It's ideal for large datasets where manual labeling is impractical and long. The key feature is its ability to use different keywords for different microarray platforms.
-
-1. Click the "Automatic Labeling" button
-
-2. BioGenVariate will first identify all the unique platforms (e.g., GPL570, GPL1261 ) present in your dataset
-
-3. It will then open a series of interactive dialogs, one for each platform.
-
-4. Each dialog presents a two-pane view where you can browse the samples belonging to that specific platform to understand their context.
-
-5. At the bottom, enter the keywords that define your groups specifically for that platform.
-
-- Case Keywords: Words that identify the 'case' group (e.g., tumor, carcinoma, treated).
-
-- Control Keywords: Words that identify the 'control' group (e.g., normal, healthy, untreated).
-
-6. Click "Set Keywords & Continue to Next Platform". Once you have provided keywords for the final platform, click "Finish & Classify All Samples".
-
-For example, your 'control' keywords for a human study on GPL570 might be healthy donor, while for a mouse study on GPL1261 they might be wild-type. BioGenVariate handles this context seamlessly.
-
-# Saving Your Labeled Data:
-
-Whether you chose manual or automatic labeling, the final step is saving. The tool will add a new column to your data (User_Label or Predicted_Label) containing the 0s and 1s.
-
-The labeled datasets are saved as new CSV files inside the same results folder created during Step 1. To keep your results organized, the tool saves a separate labeled file for each platform, named like:
-
-- step2_GPL570_auto_labeled.csv
-
-- step2_GPL1261_manual_labeled.csv
-
-Your data is now fully extracted, filtered, and classified, ready for downstream statistical analysis and visualization within the BioGenVariate suite.
 
 
 # 2. The Gene Distribution Explorer
