@@ -122,13 +122,15 @@ Preparing Your Data Source
 
 Before you begin labeling, you must choose your input data. You have two options:
 
-    Use Data from Step 1 (Default Workflow): If you have just completed Step 1.5, your curated list of samples is already loaded and ready to go.
 
-    Load an External File: You can bypass Step 1 entirely and use your own pre-filtered dataset. This is ideal if you already have a list of samples from a previous analysis, a publication, or a private dataset.
+- Use Data from Step 1 (Default Workflow): If you have just completed Step 1.5, your curated list of samples is already loaded and ready to go.
 
-        To do this, click the "Load External File" button in the "Step 2" panel of the main window.
+- Load an External File: You can bypass Step 1 entirely and use your own pre-filtered dataset. This is ideal if you already have a list of samples from a previous analysis, a publication, or a private dataset.
 
-        Select your .csv file. The file must contain the necessary sample metadata columns for the labeling process to be effective.
+  To do this, click the "Load External File" button in the "Step 2" panel of the main window.
+
+- Select your .csv file. The file must contain the necessary sample metadata columns for the labeling process to be effective.
+  
 
 Once your data source is ready, choose one of the following labeling methods.
 
@@ -136,55 +138,62 @@ Once your data source is ready, choose one of the following labeling methods.
 
 This mode uses a local AI agent (gpt-oss:20b) to analyze the rich text metadata of each sample and extract structured information automatically. It's ideal for large datasets where manual labeling is impractical.
 
-    Click the "AI-Powered Condition Labeling" button.
+- Click the "AI-Powered Condition Labeling" button.
+  
 
-    The process begins immediately in the background. The AI agent reads the full metadata for each sample (including title, source, characteristics, and protocols).
+The process begins immediately in the background. The AI agent reads the full metadata for each sample (including title, source, characteristics, and protocols).
+For every sample, the agent identifies and extracts key biological attributes into distinct columns:
 
-    For every sample, the agent identifies and extracts key biological attributes into distinct columns:
 
-        Classified_Condition: The primary biological state (e.g., Alzheimer Disease, Control, Pancreatic Cancer).
+Classified_Condition: The primary biological state (e.g., Alzheimer Disease, Control, Pancreatic Cancer).
 
-        Classified_Tissue: The tissue of origin (e.g., Whole Blood, Brain, PBMC).
+Classified_Tissue: The tissue of origin (e.g., Whole Blood, Brain, PBMC).
 
-        Classified_Age: The sample's age (e.g., 35 years, Old Age, infant).
+Classified_Age: The sample's age (e.g., 35 years, Old Age, infant).
 
-        Classified_Treatment: Any substance or procedure applied (e.g., LPS stimulation, Vehicle, None).
+Classified_Treatment: Any substance or procedure applied (e.g., LPS stimulation, Vehicle, None).
 
-        Classified_Treatment_Time: The duration or time point of treatment (e.g., 24h, 6 hours, one month).
+Classified_Treatment_Time: The duration or time point of treatment (e.g., 24h, 6 hours, one month).
 
-    You can monitor the progress in the log window, which provides real-time updates, processing speed, and an estimated time of completion.
+
+You can monitor the progress in the log window, which provides real-time updates, processing speed, and an estimated time of completion.
 
 # Option 2: Manual Labeling (For Maximum Precision) ✍️
 
 This mode gives you complete, sample-by-sample control over the classification process, allowing you to define the exact labels you need for your analysis.
 
-    Click the "Manual Labeling" button.
+- Click the "Manual Labeling" button.
 
-    A setup dialog will appear asking you to define the labels you want to assign. You can select from a list of defaults (e.g., Condition, Age, Treatment) or add your own custom labels (e.g., Genotype, Batch_Number).
+A setup dialog will appear asking you to define the labels you want to assign. You can select from a list of defaults (e.g., Condition, Age, Treatment) or add your own custom labels (e.g., Genotype, Batch_Number).
 
-    Once your labels are set, a detailed dialog window will appear for the first sample. It displays all available metadata in a clear, readable format.
+Once your labels are set, a detailed dialog window will appear for the first sample. It displays all available metadata in a clear, readable format.
 
-    Based on the information, fill in the text fields for each of the labels you defined.
+Based on the information, fill in the text fields for each of the labels you defined.
 
-    Choose one of the three actions for the sample:
+
+- Choose one of the three actions for the sample:
 
         OK: Saves your labels and proceeds to the next sample.
 
         Skip Sample: Excludes the current sample from the final labeled dataset and moves to the next one.
 
         Cancel All: Stops the entire manual labeling process.
+  
 
-Saving Your Labeled Data
+- Saving Your Labeled Data
 
 Whether you chose the AI-powered or manual method, GenVariate automatically saves the results.
 
-    Directory: The labeled data is saved inside the same timestamped results folder that was created during Step 1. If you loaded an external file, a new results folder will be created.
 
-    File Naming: The tool adds new columns to your data (e.g., Classified_Condition for AI or User_Condition for manual). To keep your results organized, it saves a separate labeled file for each platform present in your dataset, named like:
+- Directory: The labeled data is saved inside the same timestamped results folder that was created during Step 1. If you loaded an external file, a new results folder will be created.
+
+- File Naming: The tool adds new columns to your data (e.g., Classified_Condition for AI or User_Condition for manual). To keep your results organized, it saves a separate labeled file for each platform present in your dataset, named like:
+  
 
         step2_GPL570_ai-conditions.csv
 
         step2_GPL1261_manual.csv
+  
 
 Your data is now fully extracted, filtered, and classified, ready for deep-dive statistical analysis and visualization within the GenVariate suite.
 
