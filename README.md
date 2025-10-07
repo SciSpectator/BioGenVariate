@@ -112,7 +112,6 @@ GenVariate automatically organizes your results for you.
 
 Finally, the main application window will update to show the selected GSE IDs, confirming that your curated dataset is now ready for the labeling and analysis stages in Step 2.
 
-# Step 2: 
 
 # Step 2: Classifying and Labeling Your Samples
 
