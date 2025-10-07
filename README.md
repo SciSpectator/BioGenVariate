@@ -118,7 +118,7 @@ Finally, the main application window will update to show the selected GSE IDs, c
 
 After extracting your data, the next critical step is to classify each individual sample (GSM) into meaningful biological groups. GenVariate offers two flexible and powerful modes for this task: a high-speed, AI-driven approach and a precise, expert-driven manual workflow.
 
-Preparing Your Data Source
+# Preparing Your Data Source
 
 Before you begin labeling, you must choose your input data. You have two options:
 
@@ -139,9 +139,8 @@ Once your data source is ready, choose one of the following labeling methods.
 This mode uses a local AI agent (gpt-oss:20b) to analyze the rich text metadata of each sample and extract structured information automatically. It's ideal for large datasets where manual labeling is impractical.
 
 - Click the "AI-Powered Condition Labeling" button.
-  
 
-The process begins immediately in the background. The AI agent reads the full metadata for each sample (including title, source, characteristics, and protocols).
+  The process begins immediately in the background. The AI agent reads the full metadata for each sample (including title, source, characteristics, and protocols).
 For every sample, the agent identifies and extracts key biological attributes into distinct columns:
 
 
