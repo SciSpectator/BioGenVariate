@@ -26,9 +26,10 @@ While GenVariate includes quick-load buttons for common human and mouse platform
 
 Offers two distinct workflows for sample classification:
 
-- AI Agent-Powered Labeling: Leverages a local AI agent via the Ollama service, running the gpt-oss:20b open-source model. The agent analyzes sample metadata to automatically extract structured information, including Condition, Tissue, Age, and Treatment.
+- AI Agent-Powered Labeling: Leverages a local AI agent via the Ollama service, running the gpt-oss:20b open-source model. The agent analyzes sample metadata to automatically extract structured information, including Condition, Tissue, Age, and Treatment with Treatment Time.
 
-- Advanced Manual Labeling: An interactive dialog allows for expert-driven, sample-by-sample classification with customizable labels, ensuring accuracy and control over the final dataset.
+
+- Manual Labeling: An interactive dialog allows for sample-by-sample classification with customizable labels, ensuring accuracy and control over the final dataset.
     
 
 📊 Interactive Gene Distribution Explorer
