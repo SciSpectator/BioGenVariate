@@ -82,9 +82,14 @@ This initial step is designed to find relevant studies and samples for your rese
 
 In the main application window, locate the "Step 1: GSE Extraction" section. Configure your search using the following parameters:
 
-    Platform Filter (optional): Enter a comma-separated list of platform IDs (e.g., GPL570,GPL96) to restrict your search to specific microarray or sequencing technologies. Leave this blank to search across all platforms.
 
-    Filtering Tokens: This is the core of your search. Enter a comma-separated list of keywords that describe your research interest (e.g., alzheimer disease,control,brain). The tool will search for these terms in both the overall study (GSE) descriptions and the detailed individual sample (GSM) metadata.
+<img width="1024" height="158" alt="Step1" src="https://github.com/user-attachments/assets/e6ddeb44-1f98-4e1c-8570-0565d38fb533" />
+
+    
+Platform Filter (optional): Enter a comma-separated list of platform IDs (e.g., GPL570,GPL96 - any other platform which data is available in geometadb file not only default platforms) to restrict your search to specific microarray or sequencing technologies. Leave this blank to search across all platforms.
+
+
+Filtering Tokens: This is the core of your search. Enter a comma-separated list of keywords that describe your research interest (e.g., alzheimer disease,control,brain). The tool will search for these terms in both the overall study (GSE) descriptions and the detailed individual sample (GSM) metadata.
 
 Once you have configured your search, click "Run GSE Extraction". The process will begin in the background, and you can monitor its progress via the progress bar and the log output window.
 
