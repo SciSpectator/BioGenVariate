@@ -84,7 +84,10 @@ In the main application window, locate the "Step 1: GSE Extraction" section. Con
 
 <img width="1024" height="158" alt="Step1" src="https://github.com/user-attachments/assets/e6ddeb44-1f98-4e1c-8570-0565d38fb533" />
 
-Ryc1. Step 1 visible on the GUI of GeneVariate application with Platform Filter and Filtering Tokens option
+_Ryc1. Step 1 visible on the GUI of GeneVariate application with Platform Filter and Filtering Tokens option_
+
+
+
 
 
 
@@ -99,7 +102,7 @@ Ryc1. Step 1 visible on the GUI of GeneVariate application with Platform Filter 
 
 
     
-Platform Filter (optional): Enter a comma-separated list of platform IDs (e.g., GPL570,GPL96 - any other platform which data is available in geometadb file not only default platforms) to restrict your search to specific microarray or sequencing technologies. Leave this blank to search across all platforms.
+Platform Filter (optional): To restrict your search, enter a comma-separated list of platform IDs (e.g., GPL570, GPL96). This is not limited to the default platforms; any platform ID available in the geometadb file can be used. Leave this field blank to search across all platforms.
 
 
 Filtering Tokens: This is the core of your search. Enter a comma-separated list of keywords that describe your research interest (e.g., alzheimer disease,control,brain). The tool will search for these terms in both the overall study (GSE) descriptions and the detailed individual sample (GSM) metadata.
