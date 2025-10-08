@@ -83,7 +83,17 @@ In the main application window, locate the "Step 1: GSE Extraction" section. Con
 
 
 <img width="1024" height="158" alt="Step1" src="https://github.com/user-attachments/assets/e6ddeb44-1f98-4e1c-8570-0565d38fb533" />
+
 Ryc1. Step 1 visible on the GUI of GeneVariate application with Platform Filter and Filtering Tokens option
+
+
+
+
+
+
+
+
+
 
 
 
