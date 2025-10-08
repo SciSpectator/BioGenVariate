@@ -117,19 +117,33 @@ Upon completion, a new "Step 1.5: Review, Analyze, and Select GSEs" window will 
 
 The window is split into two panes:
 
-    Left Pane (GSE List): This is a table of all studies that contained at least one of your keywords. It provides a concise summary, including the platform, the specific "Matching Tokens" found, and a count of samples that were "Direct Matches" versus those that are just associated with the study. This allows you to immediately gauge the relevance of each result. You can select one or more GSEs from this list to inspect and keep.
 
-    Right Pane (Details and Keyword Highlighting): When you click on a GSE in the left pane, this area populates with the combined titles, descriptions, and characteristics from its samples. To make validation effortless, all of your original search tokens are highlighted, so you can instantly see them in their proper context.
+<img width="1199" height="832" alt="Step1_5" src="https://github.com/user-attachments/assets/04e0c936-e0b2-42f9-a16f-283b00877d96" />
+_Ryc2. Example of the review window in Step 1.5 for extracted Filtering Tokens: "Alzheimer Disease" in platform GPL570_
+
+
+
+
+
+
+
+
+
+Left Pane (GSE List): This is a table of all studies that contained at least one of your keywords. It provides a concise summary, including the platform, the specific "Matching Tokens" found, and a count of samples that were "Direct Matches" versus those that are just associated with the study. This allows you to immediately gauge the relevance of each result. You can select one or more GSEs from this list to inspect and keep.
+
+Right Pane (Details and Keyword Highlighting): When you click on a GSE in the left pane, this area populates with the combined titles, descriptions, and characteristics from its samples. To make validation effortless, all of your original search tokens are highlighted, so you can instantly see them in their proper context.
 
 Review the studies and select all the ones you wish to include in your final dataset by clicking on them in the left pane (use Ctrl-Click or Shift-Click to select multiple). When you are finished, click the "Save Kept GSEs and Continue to Step 2" button.
+
 
 Saving and Finalizing Your Selection
 
 GenVariate automatically organizes your results for you.
 
-    Directory: A new directory is created inside the NEW_RESULTS_ROOT folder. This new folder is named using your search tokens, platform filter, and a timestamp for easy identification (e.g., alzheimer_GPL570_20251007_154500).
 
-    File: Inside this folder, the tool saves a single, comprehensive CSV file named step1_selected_samples.csv. This file contains the detailed metadata for every sample from all the studies you selected.
+Directory: A new directory is created inside the NEW_RESULTS_ROOT folder. This new folder is named using your search tokens, platform filter, and a timestamp for easy identification (e.g., alzheimer_GPL570_20251007_154500).
+
+File: Inside this folder, the tool saves a single, comprehensive CSV file named step1_selected_samples.csv. This file contains the detailed metadata for every sample from all the studies you selected.
 
 Finally, the main application window will update to show the selected GSE IDs, confirming that your curated dataset is now ready for the labeling and analysis stages in Step 2.
 
