@@ -119,7 +119,15 @@ The window is split into two panes:
 
 
 <img width="1199" height="832" alt="Step1_5" src="https://github.com/user-attachments/assets/04e0c936-e0b2-42f9-a16f-283b00877d96" />
+
 _Ryc2. Example of the review window in Step 1.5 for extracted Filtering Tokens: "Alzheimer Disease" in platform GPL570_
+
+
+
+
+
+
+
 
 
 
