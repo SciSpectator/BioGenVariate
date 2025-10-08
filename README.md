@@ -85,6 +85,9 @@ In the main application window, locate the "Step 1: GSE Extraction" section. Con
 <img width="1024" height="158" alt="Step1" src="https://github.com/user-attachments/assets/e6ddeb44-1f98-4e1c-8570-0565d38fb533" />
 Ryc1. Step 1 visible on the GUI of GeneVariate application with Platform Filter and Filtering Tokens option
 
+
+
+
     
 Platform Filter (optional): Enter a comma-separated list of platform IDs (e.g., GPL570,GPL96 - any other platform which data is available in geometadb file not only default platforms) to restrict your search to specific microarray or sequencing technologies. Leave this blank to search across all platforms.
 
