@@ -186,9 +186,23 @@ This mode uses a local AI agent (gpt-oss:20b) to analyze the rich text metadata 
 For every sample, the agent identifies and extracts key biological attributes into distinct columns:
 
 
-
 <img width="1012" height="615" alt="Step2" src="https://github.com/user-attachments/assets/c8ef37ee-3dc4-449e-978b-fce6a1a53150" />
+
 _Ryc3. Example of GUI preview during "AI-Powered Condition Labeling" for Filtering Tokens: "alzheimer diosease, alzheimer" in human and mouse default platforms_
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
