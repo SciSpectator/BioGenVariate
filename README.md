@@ -290,70 +290,60 @@ Your data is now fully extracted, filtered, and classified, ready for deep-dive 
 
 # 2. Compare Distributions
 
-This tool is designed for distributions comparisons. It lets you load your own samples and visually and statistically compare their gene expression patterns against each other or against different background datasets such as GPL platforms.
+This tool is designed for advanced comparisons of user-defined sample groups. It allows you to load your own lists of case and control samples from an external file and visually and statistically compare their gene expression patterns against each other or against a larger background dataset.
 
 
+Step 1: Load and Define Your Sample Groups
 
-Step 1: Load Your Sample Groups
+First, you need to load a file that defines your sample groups.
 
-First, you need to tell GenVariate which samples belong to which group.
+    Open the Tool: In the main window, click the "Compare Distributions" button in the "Analysis Tools" section. A new window will appear.
 
+    Load Your File: In the new window, click the "Load File(s)" button. Select a .csv or .csv.gz file that contains your sample list.
 
-    Open the Tool: Click the "Compare Distributions" button in the "Analysis Tools" section of the main window to open the comparison interface.
+    Specify Columns: The tool will prompt you with a series of dialogs to understand your file's structure:
 
-    Load Your File: In the new window, click "Load File(s)" and select a .csv or .csv.gz file that contains your sample list.
+        GSM Column: Enter the exact name of the column in your file that contains the sample IDs (e.g., GSM, Sample_ID).
 
-    Specify Columns: The tool will then prompt you with a series of dialogs:
+        Case/Control Column: Enter the exact name of the column that defines your groups. This column must contain 1 for case samples and 0 for control samples.
 
-        First, enter the name of the column containing the sample IDs (GSMs) for example "gsm" or "GSM".
+    Link to a Platform: Finally, you will be asked to associate your file with one of the GPL platforms you have already loaded in the main application. This is essential for the tool to retrieve the correct expression data for your samples.
 
-        Next, enter the name of the column containing the group labels (where 1 means case and 0 means control).
-
-    Link to a Platform: Finally, you will be asked to associate your sample list with one of the GPL platforms you have already loaded in the main window. This is crucial for retrieving the expression data.
-    
-
-Your loaded groups (e.g., "my_samples.csv (Case)") will now appear in the listbox under "2. Select Groups to Compare".
-
-
-
-
+After completing these steps, your file will be processed, and two entries will appear in the listbox: one for (Case) and one for (Control).
 
 Step 2: Configure the Comparison
 
-Next, define what you want to compare by configuring the options in the left-hand panel.
+Next, use the panels on the left to define exactly what you want to compare.
 
-    Select Your Groups: In the listbox, click on the groups you want to visualize (use Ctrl-Click or Shift-Click to select multiple).
+    Select Your Groups: In the "Select Groups to Compare" listbox, click on the groups you want to visualize. You can select one or multiple groups (e.g., select both the (Case) and (Control) groups you just loaded).
 
-    Choose a Comparison Mode: Select one of the three powerful comparison modes:
+    Choose a Comparison Mode: This is the most important setting. Select one of the three modes to define your analysis:
 
-        Compare Selected Case/Control Groups Only: This mode directly compares the distributions of the groups you selected against each other.
+        Compare Selected Case/Control Groups Only: This mode directly compares the distributions of the groups you selected against each other. It is the most common choice for a simple case vs. control analysis.
 
-        Compare Groups vs. Gene(s) on Platform(s): This mode plots your selected groups and the distribution of a specific gene across an entire background platform. This is useful for seeing if your group's expression is unusual compared to the norm.
+        Compare Groups vs. Gene(s) on Platform(s): This mode plots your selected groups and the distribution of a specific gene across an entire background platform. This is useful for seeing if your group's expression is unusual compared to all other samples on that platform.
 
-        Compare Groups vs. Entire Platform(s) (All Genes): This mode compares your groups against the combined distribution of all genes from a selected background platform.
+        Compare Groups vs. Entire Platform(s) (All Genes): This mode compares your groups against the combined distribution of all genes from a selected background platform, providing a very broad context.
 
-    Specify Details: Based on the mode you chose, provide the necessary information:
+    Specify Details: Based on the mode you chose, provide any additional required information:
 
-        Gene Symbol(s): If you're comparing against a specific gene, enter its symbol here (e.g., EGFR). You can also use this in "Groups Only" mode to analyze the distribution for just that gene within your groups.
+        Gene Symbol(s): If your analysis is for a specific gene (required for Mode 2, optional for Mode 1), enter its symbol here (e.g., EGFR).
 
-        Comparison Platform(s): If you're comparing against a background, check the box for the platform(s) you want to use for the comparison.
+        Comparison Platform(s): If you chose Mode 2 or 3, you must check the box for the platform(s) you want to use as the background for the comparison.
 
-Step 3: Run the Analysis and Interpret the Results
+Step 3: Analyze and Interpret the Results
 
-Finally, generate and view your comparison.
+Once everything is configured, you can generate and view the results.
 
-    Click "Plot & Analyze Distributions": The tool will gather all the necessary data and generate plots and statistical results on the right side of the window.
+    Click "Plot & Analyze Distributions": The tool will gather all the necessary data and populate the panels on the right side of the window with plots and statistical analysis.
 
-    Interpret the Results: You will see three key outputs:
+    Interpret the Results: You will see three key outputs, each providing a different perspective on your data:
 
-        Overlaid Density Plots: This plot shows the smoothed shape and spread of the expression distributions for each group. It's excellent for quickly seeing how much the groups overlap and where their central tendencies lie.
+        Overlaid Density Plots:  This plot shows the smoothed shape and spread of the expression distributions for each group. It's excellent for quickly seeing how much the groups overlap and where their central tendencies (peaks) lie.
 
-        Overlaid Histograms: This provides a more detailed, frequency-based view of the data, showing the raw sample counts in different expression bins.
+        Overlaid Histograms: This provides a more detailed, frequency-based view of the data, showing the raw sample counts in different expression bins. The colors will match the density plot, making it easy to compare the two visualizations.
 
-        Statistical Test Results: Below the plots, a table displays the results of a pairwise Wilcoxon rank-sum test. This tells you if the differences in the expression distributions between your groups are statistically significant, providing a quantitative backbone to your visual findings.
-
-
-
+        Statistical Test Results:  Below the plots, a table displays the results of a pairwise Wilcoxon rank-sum test. This provides a statistical score for each pair of groups, helping you determine if the observed differences in their expression distributions are statistically significant.
 
 
 
