@@ -221,20 +221,24 @@ _Ryc3. Example of GUI preview during "AI-Powered Condition Labeling" for Filteri
 
 
 
+Classification is based on these criteria such as:
 
 
-Classified_Condition: The primary biological state (e.g., Alzheimer Disease, Control, Pancreatic Cancer).
+- Classified_Condition: The primary biological state (e.g., Alzheimer Disease, Healthy, Pancreatic Cancer).
 
-Classified_Tissue: The tissue of origin (e.g., Whole Blood, Brain, PBMC).
+- Classified_Tissue: The tissue of origin (e.g., Whole Blood, Brain, PBMC).
 
-Classified_Age: The sample's age (e.g., 35 years, Old Age, infant).
+- Classified_Age: The sample's age (e.g., 35 years, Old Age, infant).
 
-Classified_Treatment: Any substance or procedure applied (e.g., LPS stimulation, Vehicle, None).
+- Classified_Treatment: Any substance or procedure applied (e.g., LPS stimulation, Vehicle, None).
 
-Classified_Treatment_Time: The duration or time point of treatment (e.g., 24h, 6 hours, one month).
+- Classified_Treatment_Time: The duration or time point of treatment (e.g., 24h, 6 hours, one month).
 
 
-You can monitor the progress in the log window, which provides real-time updates, processing speed, and an estimated time of completion.
+You can monitor the progress in the log window, which provides real-time updates [AI Progress] how many samples were analyzed/how many left to end the analysis, processing speed [Speed] sample/sec, and an estimated time of completion [ETA].
+
+
+
 
 # Option 2: Manual Labeling (For Maximum Precision) ✍️
 
