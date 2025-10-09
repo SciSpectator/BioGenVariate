@@ -187,6 +187,7 @@ For every sample, the agent identifies and extracts key biological attributes in
 
 
 <img width="1010" height="625" alt="Step2" src="https://github.com/user-attachments/assets/88cfe815-b20d-4bb8-9f23-beb76bd1351d" />
+
 _Ryc3. Example of GUI preview during "AI-Powered Condition Labeling" for Filtering Tokens: "alzheimer diosease, alzheimer" in human and mouse default platforms_
 
 
