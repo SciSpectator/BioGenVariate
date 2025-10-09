@@ -176,7 +176,7 @@ Before you begin labeling, you must choose your input data. You have two options
 
 Once your data source is ready, choose one of the following labeling methods.
 
-# Option 1: AI-Powered Condition Labeling (For Speed and Scalability) 🤖
+# Option 1: AI-Powered Condition Labeling 🤖
 
 This mode uses a local AI agent (gpt-oss:20b) to analyze the rich text metadata of each sample and extract structured information automatically. It's ideal for large datasets where manual labeling is impractical.
 
@@ -240,7 +240,7 @@ You can monitor the progress in the log window, which provides real-time updates
 
 
 
-# Option 2: Manual Labeling (For Maximum Precision) ✍️
+# Option 2: Manual Labeling ✍️
 
 This mode gives you complete, sample-by-sample control over the classification process, allowing you to define the exact labels you need for your analysis.
 
