@@ -372,76 +372,13 @@ After an analysis is complete, the "Save Plots" button becomes active. Clicking 
 
 
 
-# 3. Show Gene Distribution
+# 3. Show Gene Distribution 📊
 
 
 
 
 
-# Workflow Overview: 📊 
 
-  Load GPL Datasets: Use the buttons in the UI to load the desired platform expression datasets into memory.
-
-  Run Step 1 (GSE Extraction): Enter filter tokens (e.g., "cancer,tumor") and platform IDs (e.g., "GPL570") and click "Run GSE Extraction".
-
-  Review & Select GSEs: A dialog will appear summarizing the extracted GEO Series (GSEs). Select the series you wish to analyze further.
-
-  Run Step 2 (Labeling): Choose either "Automatic" or "Manual" labeling to classify the samples from the selected GSEs into case/control groups.
-
-  Analyze in Gene Explorer: Launch the "Gene Distribution Explorer", select genes and platforms, and click "Plot Distributions". From there, you can interactively analyze tails or bins to generate word clouds, cluster graphs, and statistical reports.
-
-
-  
-
- # Output Results File Structure: 📁
-
-BioGenVariate/
-├── main.py
-├── config.py
-├── requirements.txt
-|
-├── gui/
-│   ├── __init__.py
-│   ├── main_window.py
-│   ├── compare_window.py
-│   └── distribution_explorer.py
-|
-├── data_processing/
-│   ├── __init__.py
-│   ├── extraction.py
-│   ├── labeling.py
-│   └── loader.py
-|
-├── utils/
-│   ├── __init__.py
-│   ├── embedding.py
-│   ├── ontology.py
-│   ├── statistics.py
-│   ├── patches.py
-│   └── helpers.py
-|
-└── NEW_RESULTS_ROOT/
-    └── .gitkeep
-
- 
-
-All results are saved to the NEW_RESULTS_ROOT/ directory, which is created automatically.
-
-  Extraction/Labeling Results:
-
-        NEW_RESULTS_ROOT/{query}_{platform}_{timestamp}/
-
-            step1_extracted_gsm.csv: Raw data for all matched samples.
-
-            step2_{...}_labeled.csv: Data with an added label column.
-
-  Gene Distribution Analysis Results:
-
-        NEW_RESULTS_ROOT/GeneDistributionAnalysis/{gene}_{platform}_{analysis_type}/
-
-            Contains all plots (density, word clouds, graphs) as .png or .jpg files.
-
-            Contains all statistics (enriched tokens, bio-specific tokens, all p-values) as .csv.gz files.
             
   
 
