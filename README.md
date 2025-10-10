@@ -293,7 +293,10 @@ Your data is now fully extracted, filtered, and classified, ready for deep-dive 
 This tool is designed for advanced comparisons of user-defined sample groups. It allows you to load your own lists of samples from an external file and visually and statistically compare their gene expression patterns against each other or against a larger background dataset.
 
 
-Step 1: Load and Define Your Sample Groups
+# Step 1: Load and Define Your Sample Groups
+
+
+
 
 First, you need a .csv file that defines your sample groups.
 
@@ -315,7 +318,10 @@ After completing these steps, your file will be processed, and entries for each 
 
 
 
-Step 2: Configure the Comparison
+# Step 2: Configure the Comparison
+
+
+
 
 Next, use the panels on the left to define exactly what you want to compare.
 
@@ -342,7 +348,9 @@ _Gene Symbol(s): If your analysis is for specific genes (required for Mode 2), e
 _Comparison Platform(s): If you chose Mode 2 or 3, check the box for the platform(s) you want to use as a background._
 
 
-Step 3: Analyze and Interact with the Results
+# Step 3: Analyze and Interact with the Results
+
+
 
 Click "Plot & Analyze Distributions" to generate the results.
 
@@ -350,9 +358,11 @@ Click "Plot & Analyze Distributions" to generate the results.
 _Overlaid Density & Histogram Plots: These plots visualize the expression distributions. The density plot shows a smoothed shape, while the histogram shows raw sample counts._
 
 _Statistical Test Results: A table below the plots displays the results of a pairwise Wilcoxon rank-sum test, helping you determine if the observed differences are statistically significant._
+
+
     
 
-Interactive Feature: Change Plot Colors
+# Interactive Feature: Change Plot Colors
 
 You can customize the colors of the plots for better visualization
 
