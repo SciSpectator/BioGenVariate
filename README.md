@@ -366,6 +366,8 @@ _Statistical Test Results: A table below the plots displays the results of a pai
 
 You can customize the colors of the plots for better visualization
 
+After an analysis is complete, the "Save Plots" button becomes active. Clicking it opens a dialog where you can choose which of the generated plots you want to save, select a format (png, svg, pdf), and choose a save location.
+
 
 
 
