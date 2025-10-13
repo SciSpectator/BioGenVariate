@@ -472,12 +472,21 @@ Classified Analysis Plots: For each category the AI classified (e.g., Condition)
 <img width="1298" height="695" alt="Screenshot from 2025-10-13 11-53-10" src="https://github.com/user-attachments/assets/d227ca46-5848-41ff-933e-579b5c9609d3" /><img width="1302" height="693" alt="Screenshot from 2025-10-11 14-16-18" src="https://github.com/user-attachments/assets/34b07f11-900a-4412-a64d-fda946fe29b5" />
 
 
-_Ryc6. Example Classified Analysis Plots from selected subset of distribution in GPL96 for gene APP after choosing option "Analyze Selected Range" for classified Condition and Tissue_
+_Ryc6. Example Classified Analysis Plots from selected subset of distribution in GPL96 for gene APP after choosing option "Analyze Selected Range" for classified Condition and Tissue colored differently_
 
 
 Results Table: A final, detailed table lists every sample from your selection. It includes their GSM and GSE IDs, exact expression value, and all the new classifications determined by the AI. You can double-click any row to open that sample's page on the GEO website.
 
-        
+
+
+
+
+<img width="1799" height="851" alt="Screenshot from 2025-10-13 11-51-46" src="https://github.com/user-attachments/assets/f6336df8-f9bf-4244-bd5a-6cd5279bcc62" />
+
+_Ryc7. Example final table from selected subset of distribution in GPL96 for gene APP after choosing option "Analyze Selected Range" with informations such as:GSM, GSE, Platform, Expression, Classified Age, Condition, Tissue, Treatment and Treatment time_
+
+
+    
 
 # Step 4: Save Your Analysis Plots
 
