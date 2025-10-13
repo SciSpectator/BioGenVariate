@@ -490,19 +490,11 @@ _Ryc7. Example final table from selected subset of distribution in GPL96 for gen
 
 # Step 4: Save Your Analysis Plots
 
-After the analysis is complete, you can save the newly generated figures for your records.
+After the analysis is complete, you can save the newly generated figures for your records. Activate Save Button: The "Save Plots" button in the Gene Distribution Explorer window will become active.
 
+Choose Plots and Format: Clicking it opens a dialog where you can: Select which of the generated plots you want to save (the GSE overlay and all the AI analysis plots).
 
-Activate Save Button: The "Save Plots" button in the Gene Distribution Explorer window will become active.
-
-
-Choose Plots and Format: Clicking it opens a dialog where you can:
-
-Select which of the generated plots you want to save (the GSE overlay and all the AI analysis plots).
-
-Choose an image format (png, svg, pdf).
-
-Select a directory to save the files to.
+Choose an image format (png, svg, pdf) and select a directory to save the files to.
 
 
 
