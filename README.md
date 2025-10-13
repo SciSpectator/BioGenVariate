@@ -395,13 +395,17 @@ This  tool allows you to visualize and analyze the expression distribution of sp
 First, you'll generate plots to see how your gene(s) of interest are expressed across one or more platforms.
 
 
+
 Open the Tool: In the main application window, click the "Show Gene Distribution" button. A new "Gene Distribution Explorer" window will open.
+
 
 
 Select Platforms: Check the boxes for the GPL platform(s) you want to investigate. You must have already loaded these platforms in the main window.
 
 
+
 Enter Genes: In the "Gene Symbol(s)" text box, enter the gene symbols you are interested in. You can enter multiple genes separated by commas (e.g., APP, BACE1, PSEN1).
+
 
 
 Plot: Click the "Plot Distributions" button. The tool will generate a grid of histograms, with each plot showing the expression distribution for one gene on one platform. The title of each plot provides useful information, including the best-fit statistical distribution (e.g., Normal, Bimodal) and the total number of samples.
@@ -409,6 +413,7 @@ Plot: Click the "Plot Distributions" button. The tool will generate a grid of hi
 
 
 # Step 2: Interactively Select a Sample Range
+
 
 Once the plots are displayed, you can isolate a group of samples within a specific expression range.
 
@@ -424,9 +429,12 @@ Activate Analysis: After you make a selection, the "Analyze Selected Range" butt
 
 This is where the tool's main power lies. By clicking the "Analyze Selected Range" button, you trigger a multi-step automated analysis of the samples you just selected.
 
+
 GSE Overlay Plot: A new interactive plot window will immediately appear.
 
+
 What it shows: This plot displays the overall distribution of the gene across the entire platform as a gray histogram. Overlaid on this are "rug" marks representing the individual samples from your selection, color-coded by their study ID (GSE).
+
 
 
 Interactivity: You can click on a GSE ID in the legend to open its official page on the NCBI GEO website. You can also click the colored patch next to it to change its color on the plot. This helps you quickly identify which experiments contributed the most samples to your selected expression range.
