@@ -443,7 +443,12 @@ This is where the tool's main power lies. By clicking the "Analyze Selected Rang
 GSE Overlay Plot: A new interactive plot window will immediately appear.
 
 
-What it shows: This plot displays the overall distribution of the gene across the entire platform as a gray histogram. Overlaid on this are "rug" marks representing the individual samples from your selection, color-coded by their study ID (GSE).
+What it shows: This plot displays the overall distribution of the gene across the entire platform as a gray histogram. Overlaid on this are "rug" marks representing the individual samples from your selection, color-coded by their experiment ID (GSE).
+
+
+<img width="850" height="571" alt="Screenshot from 2025-10-13 11-58-19" src="https://github.com/user-attachments/assets/f6061d09-2dc5-4414-9737-1e048e3acf08" />
+_Ryc6. Example of GSE Overlay  of gene APP distributions from selected subset of distribution in GPL96 after choosing option "Analyze Selected Range" - each colored "rug" marks tagging positions across entire distribution from the platform which subset is analyzed_
+
 
 
 
