@@ -459,7 +459,7 @@ Interactivity: You can click on a GSE ID in the legend to open its official page
 AI Classification: In the background, the tool fetches the full metadata for every sample in your selection and sends it to the local AI agent. The AI analyzes the text descriptions (title, characteristics, protocols) to classify each sample based on categories like Condition, Tissue, Treatment, Age, and Treatment Time.
 
 
-AI Analysis Plots & Table: Once the AI is finished, several new windows will appear:
+AI Analysis Plots & Table: Once the analysis is finished, several results new windows will appear:
 
 
 Classified Analysis Plots: For each category the AI classified (e.g., Condition), a new plot window is generated. This plot shows the expression density of your selected samples, broken down by the AI-assigned labels (e.g., 'Alzheimer Disease' vs. 'Control'). This allows you to see if the expression level you selected corresponds to a specific biological or experimental group.
