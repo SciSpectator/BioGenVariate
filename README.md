@@ -470,7 +470,7 @@ AI Classification: In the background, the tool fetches the full metadata for eve
 AI Analysis Plots & Table: Once the analysis is finished, several results new windows will appear:
 
 
-Classified Analysis Plots: For each category the AI classified (e.g., Condition), a new plot window is generated. This plot shows the expression density of your selected samples, broken down by the AI-assigned labels (e.g., 'Alzheimer Disease' vs. 'Control'). This allows you to see if the expression level you selected corresponds to a specific biological or experimental group.
+Classified Analysis Plots: For each category the AI classified (e.g., Condition), a new plot window is generated. This plot shows the expression density of your selected samples (_Ryc7._) , broken down by the classified labels (e.g., 'Alzheimer Disease' vs. 'Control'). This allows you to see if the expression level you selected corresponds to a specific biological or experimental group. For categories containing only a single sample, the plot displays a distinct vertical line instead of a density curve, making it easy to pinpoint the exact expression value of individual categories.
 
 
 
