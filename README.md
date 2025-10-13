@@ -422,6 +422,16 @@ Click and Drag: Position your cursor on any histogram. Click and drag horizontal
 
 
 Activate Analysis: After you make a selection, the "Analyze Selected Range" button will become active.
+
+
+
+
+
+
+
+<img width="1269" height="875" alt="Screenshot from 2025-10-11 00-48-59" src="https://github.com/user-attachments/assets/2f84a2ee-03df-4535-ae9b-929f9b46bac5" />
+
+_Ryc5. Example of GUI preview of gene APP distributions from selected GPL96, GPL6947, GPL7202 and GPL6885 with selected subset of distribution in GPL96 which can be analyzed by clicking "Analyze Selected Range"_
     
 
 
