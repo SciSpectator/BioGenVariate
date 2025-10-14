@@ -417,10 +417,9 @@ After an analysis is complete, the "Save Plots" button becomes active. Clicking 
 
 
 
+<img width="1614" height="867" alt="Screenshot from 2025-10-14 13-40-59" src="https://github.com/user-attachments/assets/7d2a345c-3b44-482a-9bc9-d8fbe596b099" />
 
-
-_Ryc6. Example of GUI preview of results in "Compare Distributions"_
-
+_Ryc6. Example of GUI preview of results in "Compare Distributions" from extracted and colored experiments ID (GSE) _
 
 
 
