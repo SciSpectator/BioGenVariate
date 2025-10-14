@@ -3,7 +3,7 @@
 </p>
 
 
-GenVariate is a sophisticated, GUI-driven Python application designed for the in-depth analysis of gene expression data from the Gene Expression Omnibus (GEO) and custom user datasets. It provides a powerful, multi-step workflow to extract, filter, label, and analyze biological samples. The application moves beyond simple keyword searches by integrating a local AI agent, powered by the gpt-oss:20b open-source model, for automated metadata classification and features a unique, interactive tool for deep-dive analysis of specific gene expression distributions.
+GenVariate is a sophisticated, GUI-driven Python application designed for the in-depth analysis of gene expression data from the Gene Expression Omnibus (GEO) and custom user datasets. It provides a multi-step workflow to extract, filter, label, and analyze biological samples and experiments from data. The application moves beyond simple keyword searches by integrating a local AI agent, powered by the gpt-oss:20b open-source model, for automated metadata classification and features a unique, interactive tool for deep-dive analysis of specific gene expression distributions.
 
 The suite is engineered for researchers who need to identify relevant experimental cohorts from the vast GEO database, classify samples using either AI-assisted or manual methods, and explore the descriptive metadata associated with unique gene expression patterns. It excels at analyzing user-defined regions of interest within a gene's expression distribution (such as the high or low-expression tails) and generating insightful, publication-ready visualizations and data tables.
 
