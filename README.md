@@ -9,6 +9,7 @@ The suite is engineered for researchers who need to identify relevant experiment
 
 
 <img width="1025" height="573" alt="Screenshot from 2025-10-14 12-36-25" src="https://github.com/user-attachments/assets/bb166fe7-fa0b-4adc-847d-89bbe771e54a" />
+
 _Ryc1.GeneVariate 1.0 GUI application_
 
 
