@@ -8,6 +8,12 @@ GenVariate is a sophisticated, GUI-driven Python application designed for the in
 The suite is engineered for researchers who need to identify relevant experimental cohorts from the vast GEO database, classify samples using either AI-assisted or manual methods, and explore the descriptive metadata associated with unique gene expression patterns. It excels at analyzing user-defined regions of interest within a gene's expression distribution (such as the high or low-expression tails) and generating insightful, publication-ready visualizations and data tables.
 
 
+<img width="1025" height="573" alt="Screenshot from 2025-10-14 12-36-25" src="https://github.com/user-attachments/assets/bb166fe7-fa0b-4adc-847d-89bbe771e54a" />
+_Ryc1.GeneVariate 1.0 GUI application_
+
+
+
+
 # 🔬 Core Features
 
 Comprehensive Experiment Extraction
@@ -85,7 +91,7 @@ In the main application window, locate the "Step 1: GSE Extraction" section. Con
 
 <img width="1024" height="158" alt="Step1" src="https://github.com/user-attachments/assets/e6ddeb44-1f98-4e1c-8570-0565d38fb533" />
 
-_Ryc1. Step 1 visible on the GUI of GeneVariate application with Platform Filter and Filtering Tokens option_
+_Ryc2. Step 1 visible on the GUI of GeneVariate application with Platform Filter and Filtering Tokens option_
 
 
 
@@ -121,7 +127,7 @@ The window is split into two panes:
 
 <img width="1199" height="832" alt="Step1_5" src="https://github.com/user-attachments/assets/04e0c936-e0b2-42f9-a16f-283b00877d96" />
 
-_Ryc2. Example of the review window in Step 1.5 for extracted Filtering Tokens: "Alzheimer Disease" in platform GPL570_
+_Ryc3. Example of the review window in Step 1.5 for extracted Filtering Tokens: "Alzheimer Disease" in platform GPL570_
 
 
 
@@ -189,7 +195,7 @@ For every sample, the agent identifies and extracts key biological attributes in
 
 <img width="1010" height="625" alt="Step2" src="https://github.com/user-attachments/assets/88cfe815-b20d-4bb8-9f23-beb76bd1351d" />
 
-_Ryc3. Example of GUI preview during "AI-Powered Condition Labeling" for Filtering Tokens: "alzheimer diosease, alzheimer" in human and mouse default platforms_
+_Ryc4. Example of GUI preview during "AI-Powered Condition Labeling" for Filtering Tokens: "alzheimer diosease, alzheimer" in human and mouse default platforms_
 
 
 
@@ -374,7 +380,7 @@ You can customize the colors of the plots for better visualization ( like also i
 
 <img width="410" height="188" alt="Screenshot from 2025-10-13 18-06-47" src="https://github.com/user-attachments/assets/402eb9d6-050e-4b44-a74d-79f5752b7e5e" />
 
-_Ryc4. Example of additional window in legend option to determine the best color to your label (classified condition or sample/experiment ID)_
+_Ryc5. Example of additional window in legend option to determine the best color to your label (classified condition or sample/experiment ID)_
 
 
 
@@ -412,7 +418,7 @@ After an analysis is complete, the "Save Plots" button becomes active. Clicking 
 
 
 
-_Ryc5. Example of GUI preview of results in "Compare Distributions"_
+_Ryc6. Example of GUI preview of results in "Compare Distributions"_
 
 
 
@@ -467,7 +473,7 @@ Activate Analysis: After you make a selection, the "Analyze Selected Range" butt
 
 <img width="1269" height="875" alt="Screenshot from 2025-10-11 00-48-59" src="https://github.com/user-attachments/assets/2f84a2ee-03df-4535-ae9b-929f9b46bac5" />
 
-_Ryc6. Example of GUI preview of gene APP distributions from selected GPL96, GPL6947, GPL7202 and GPL6885 with selected subset of distribution in GPL96 which can be analyzed by clicking "Analyze Selected Range"_
+_Ryc7. Example of GUI preview of gene APP distributions from selected GPL96, GPL6947, GPL7202 and GPL6885 with selected subset of distribution in GPL96 which can be analyzed by clicking "Analyze Selected Range"_
     
 
 
@@ -484,19 +490,19 @@ What it shows: This plot displays the overall distribution of the gene across th
 
 <img width="850" height="571" alt="Screenshot from 2025-10-13 11-58-19" src="https://github.com/user-attachments/assets/f6061d09-2dc5-4414-9737-1e048e3acf08" />
 
-_Ryc7. Example of GSE Overlay  of gene APP distributions from selected subset of distribution in GPL96 after choosing option "Analyze Selected Range" - each colored "rug" marks tagging positions across entire distribution from the platform which subset is analyzed with window of summary of experiments IDs ("GSE") and their frequency on selected region ("Selected") and entire distribution ("Total")_
+_Ryc8. Example of GSE Overlay  of gene APP distributions from selected subset of distribution in GPL96 after choosing option "Analyze Selected Range" - each colored "rug" marks tagging positions across entire distribution from the platform which subset is analyzed with window of summary of experiments IDs ("GSE") and their frequency on selected region ("Selected") and entire distribution ("Total")_
 
 
 
 
-Interactivity: You can click on a GSE ID in the legend to open its official page on the NCBI GEO website. You can also click the colored patch next to it to change its color on the plot (_Ryc4._) - like in 2. Compare Distributions. This helps you quickly identify which experiments contributed the most samples to your selected expression range.
+Interactivity: You can click on a GSE ID in the legend to open its official page on the NCBI GEO website. You can also click the colored patch next to it to change its color on the plot (_Ryc5._) - like in 2. Compare Distributions. This helps you quickly identify which experiments contributed the most samples to your selected expression range.
 
 
 
 
 <img width="410" height="188" alt="Screenshot from 2025-10-13 18-06-47" src="https://github.com/user-attachments/assets/402eb9d6-050e-4b44-a74d-79f5752b7e5e" />
 
-_Ryc8. Example of additional window in legend option to determine the best color to your label (classified condition or sample/experiment ID)_
+_Ryc9. Example of additional window in legend option to determine the best color to your label (classified condition or sample/experiment ID)_
 
 
 
@@ -506,7 +512,7 @@ AI Classification: In the background, the tool fetches the full metadata for eve
 AI Analysis Plots & Table: Once the analysis is finished, several results new windows will appear:
 
 
-Classified Analysis Plots: For each category the AI classified (e.g., Condition), a new plot window is generated. This plot shows the expression density of your selected samples (_Ryc9._) , broken down by the classified labels (e.g., 'Alzheimer Disease' vs. 'Control'). This allows you to see if the expression level you selected corresponds to a specific biological or experimental group. For categories containing only a single sample, the plot displays a distinct vertical line instead of a density curve, making it easy to pinpoint the exact expression value of individual categories.
+Classified Analysis Plots: For each category the AI classified (e.g., Condition), a new plot window is generated. This plot shows the expression density of your selected samples (_Ryc10._) , broken down by the classified labels (e.g., 'Alzheimer Disease' vs. 'Control'). This allows you to see if the expression level you selected corresponds to a specific biological or experimental group. For categories containing only a single sample, the plot displays a distinct vertical line instead of a density curve, making it easy to pinpoint the exact expression value of individual categories.
 
 
 
@@ -516,7 +522,7 @@ Classified Analysis Plots: For each category the AI classified (e.g., Condition)
 <img width="1298" height="695" alt="Screenshot from 2025-10-13 11-53-10" src="https://github.com/user-attachments/assets/d227ca46-5848-41ff-933e-579b5c9609d3" /><img width="1302" height="693" alt="Screenshot from 2025-10-11 14-16-18" src="https://github.com/user-attachments/assets/34b07f11-900a-4412-a64d-fda946fe29b5" />
 
 
-_Ryc9. Example Classified Analysis Plots from selected subset of distribution in GPL96 for gene APP after choosing option "Analyze Selected Range" for classified Condition and Tissue colored differently_
+_Ryc10. Example Classified Analysis Plots from selected subset of distribution in GPL96 for gene APP after choosing option "Analyze Selected Range" for classified Condition and Tissue colored differently_
 
 
 Results Table: A final, detailed table lists every sample from your selection. It includes their GSM and GSE IDs, exact expression value, and all the new classifications determined by the AI. You can double-click any row to open that sample's page on the GEO website.
@@ -527,7 +533,7 @@ Results Table: A final, detailed table lists every sample from your selection. I
 
 <img width="1799" height="851" alt="Screenshot from 2025-10-13 11-51-46" src="https://github.com/user-attachments/assets/f6336df8-f9bf-4244-bd5a-6cd5279bcc62" />
 
-_Ryc10. Example final table from selected subset of distribution in GPL96 for gene APP after choosing option "Analyze Selected Range" with informations such as:GSM, GSE, Platform, Expression, Classified Age, Condition, Tissue, Treatment and Treatment time_
+_Ryc11. Example final table from selected subset of distribution in GPL96 for gene APP after choosing option "Analyze Selected Range" with informations such as:GSM, GSE, Platform, Expression, Classified Age, Condition, Tissue, Treatment and Treatment time_
 
 
     
