@@ -500,20 +500,13 @@ Interactivity: You can click on a GSE ID in the legend to open its official page
 
 
 
-
-<img width="410" height="188" alt="Screenshot from 2025-10-13 18-06-47" src="https://github.com/user-attachments/assets/402eb9d6-050e-4b44-a74d-79f5752b7e5e" />
-
-_Ryc9. Example of additional window in legend option to determine the best color to your label (classified condition or sample/experiment ID)_
-
-
-
 AI Classification: In the background, the tool fetches the full metadata for every sample in your selection and sends it to the local AI agent. The AI analyzes the text descriptions (title, characteristics, protocols) to classify each sample based on categories like Condition, Tissue, Treatment, Age, and Treatment Time.
 
 
 AI Analysis Plots & Table: Once the analysis is finished, several results new windows will appear:
 
 
-Classified Analysis Plots: For each category the AI classified (e.g., Condition), a new plot window is generated. This plot shows the expression density of your selected samples (_Ryc10._) , broken down by the classified labels (e.g., 'Alzheimer Disease' vs. 'Control'). This allows you to see if the expression level you selected corresponds to a specific biological or experimental group. For categories containing only a single sample, the plot displays a distinct vertical line instead of a density curve, making it easy to pinpoint the exact expression value of individual categories.
+Classified Analysis Plots: For each category the AI classified (e.g., Condition), a new plot window is generated. This plot shows the expression density of your selected samples (_Ryc9._) , broken down by the classified labels (e.g., 'Alzheimer Disease' vs. 'Control'). This allows you to see if the expression level you selected corresponds to a specific biological or experimental group. For categories containing only a single sample, the plot displays a distinct vertical line instead of a density curve, making it easy to pinpoint the exact expression value of individual categories.
 
 
 
@@ -523,7 +516,7 @@ Classified Analysis Plots: For each category the AI classified (e.g., Condition)
 <img width="1298" height="695" alt="Screenshot from 2025-10-13 11-53-10" src="https://github.com/user-attachments/assets/d227ca46-5848-41ff-933e-579b5c9609d3" /><img width="1302" height="693" alt="Screenshot from 2025-10-11 14-16-18" src="https://github.com/user-attachments/assets/34b07f11-900a-4412-a64d-fda946fe29b5" />
 
 
-_Ryc10. Example Classified Analysis Plots from selected subset of distribution in GPL96 for gene APP after choosing option "Analyze Selected Range" for classified Condition and Tissue colored differently_
+_Ryc9. Example Classified Analysis Plots from selected subset of distribution in GPL96 for gene APP after choosing option "Analyze Selected Range" for classified Condition and Tissue colored differently_
 
 
 Results Table: A final, detailed table lists every sample from your selection. It includes their GSM and GSE IDs, exact expression value, and all the new classifications determined by the AI. You can double-click any row to open that sample's page on the GEO website.
@@ -534,7 +527,7 @@ Results Table: A final, detailed table lists every sample from your selection. I
 
 <img width="1799" height="851" alt="Screenshot from 2025-10-13 11-51-46" src="https://github.com/user-attachments/assets/f6336df8-f9bf-4244-bd5a-6cd5279bcc62" />
 
-_Ryc11. Example final table from selected subset of distribution in GPL96 for gene APP after choosing option "Analyze Selected Range" with informations such as:GSM, GSE, Platform, Expression, Classified Age, Condition, Tissue, Treatment and Treatment time_
+_Ryc10. Example final table from selected subset of distribution in GPL96 for gene APP after choosing option "Analyze Selected Range" with informations such as:GSM, GSE, Platform, Expression, Classified Age, Condition, Tissue, Treatment and Treatment time_
 
 
     
