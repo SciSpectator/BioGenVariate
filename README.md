@@ -405,6 +405,12 @@ After an analysis is complete, the "Save Plots" button becomes active. Clicking 
 
 
 
+
+
+
+
+
+
 _Ryc5. Example of GUI preview of results in "Compare Distributions"_
 
 
