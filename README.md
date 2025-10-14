@@ -312,7 +312,8 @@ Sample ID Column (GSM): Select the column in your file that contains the sample 
 Grouping/Label Column(s): Select one or more columns that define your experimental groups (e.g., classifications conducted by AI agent such as Condition , Age, Tissue, Treatment or Treatment Time).
 
 
-Link to a Platform: Finally, you'll be asked to associate your file with one of the GPL platforms you've already loaded. This is essential for the tool to retrieve the correct expression data for your samples.
+Link to Source Platform(s): After specifying columns, a new dialog will appear. Here, you will associate your file with all the potential source platforms where its samples might be found
+
 
 After completing these steps, your file will be processed, and entries for each unique group will appear in the listbox.
 
