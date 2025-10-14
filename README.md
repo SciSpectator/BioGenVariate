@@ -419,7 +419,7 @@ After an analysis is complete, the "Save Plots" button becomes active. Clicking 
 
 <img width="1614" height="867" alt="Screenshot from 2025-10-14 13-40-59" src="https://github.com/user-attachments/assets/7d2a345c-3b44-482a-9bc9-d8fbe596b099" />
 
-_Ryc6. Example of GUI preview of results in "Compare Distributions" from extracted in Step 1 alzheimer disease experiments ID (GSE) from GPL  _
+_Ryc6. Example of GUI preview of results and plots available in "Compare Distributions" from extracted in Step 1 alzheimer disease experiments ID (GSE) from GPL96 and GPL6947_
 
 
 
