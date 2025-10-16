@@ -319,7 +319,8 @@ An interactive plot window will open, displaying the distribution. If you entere
 
 
 
-_Fig 5. An example distribution plot showing samples from two experiments (GSEs) against the full platform background. Note the red-bordered bars indicating missed samples._
+
+_Fig 5. An example distribution plot showing samples from extracted Alzheimer disease experiments (GSEs) against the full platform background ( all other samples from this experiment/experiments)._
 
 
 
