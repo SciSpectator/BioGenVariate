@@ -184,71 +184,38 @@ Before you begin labeling, you must choose your input data. You have two options
 
 Once your data source is ready, choose one of the following labeling methods.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Option 1: AI-Powered Condition Labeling 🤖
-
-This mode uses a local AI agent (gpt-oss:20b) to analyze the rich text metadata of each sample and extract structured information automatically. It's ideal for large datasets where manual labeling is impractical.
-
-- Click the "AI-Powered Condition Labeling" button.
-
-  The process begins immediately in the background. The AI agent reads the full metadata for each sample (including title, source, characteristics, and protocols).
-For every sample, the agent identifies and extracts key biological attributes into distinct columns:
-
-
-
-<img width="1023" height="715" alt="Screenshot from 2025-10-15 17-36-54" src="https://github.com/user-attachments/assets/32aaeb7c-186c-4b08-b2da-7781b9385888" />
-
-_Ryc4. Example of GUI preview during "AI-Powered Condition Labeling" for Filtering Tokens: "alzheimer diosease, alzheimer" in human and mouse default platforms_
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Classification is based on these criteria such as:
-
-
-- Classified_Condition: The primary biological state (e.g., Alzheimer Disease, Healthy, Pancreatic Cancer).
-
-- Classified_Tissue: The tissue of origin (e.g., Whole Blood, Brain, PBMC).
-
-- Classified_Age: The sample's age (e.g., 35 years, Old Age, infant).
-
-- Classified_Treatment: Any substance or procedure applied (e.g., LPS stimulation, Vehicle, None).
-
-- Classified_Treatment_Time: The duration or time point of treatment (e.g., 24h, 6 hours, one month).
-
-
-You can monitor the progress in the log window, which provides real-time updates [AI Progress] how many samples were analyzed/how many left to end the analysis, processing speed [Speed] sample/sec, and an estimated time of completion [ETA].
-
-
-# NEW VERSION:
-
 
 This mode uses a local AI agent (gemma2:9b) to automatically analyze the rich text metadata of each sample and extract structured information. It's the fastest and most efficient method for labeling large datasets where manual entry is impractical.
 
@@ -262,7 +229,15 @@ How to Use It
 
     For every sample, the agent identifies and extracts key biological attributes into distinct columns.
 
-Ryc4. Example of GUI preview during "AI-Powered Condition Labeling" for Filtering Tokens: "alzheimer disease, alzheimer" in human and mouse default platforms.
+
+
+
+<img width="1023" height="715" alt="Screenshot from 2025-10-15 17-36-54" src="https://github.com/user-attachments/assets/32aaeb7c-186c-4b08-b2da-7781b9385888" />
+
+_Ryc4. Example of GUI preview during "AI-Powered Condition Labeling" for Filtering Tokens: "alzheimer diosease, alzheimer" in human and mouse default platforms_
+
+
+
 
 Classification is based on these criteria:
 
@@ -275,9 +250,9 @@ Classification is based on these criteria:
     Classified_Treatment: Any substance or procedure applied (e.g., LPS stimulation, Vehicle, None).
 
     Classified_Treatment_Time: The duration or time point of treatment (e.g., 24h, 6 hours, one month).
+    
 
-You can monitor the progress in the log window, which provides real-time updates on how many samples have been analyzed, the current processing speed (Speed), and an estimated time of completion (ETA). Thanks to the parallel workers, you will notice a significantly higher processing speed compared to older versions.
-
+You can monitor the progress in the log window, which provides real-time updates on how many samples have been analyzed, the current processing speed (Speed), and an estimated time of completion (ETA). 
 
 
 
