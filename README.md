@@ -296,11 +296,46 @@ Whether you chose the AI-powered or manual method, GenVariate automatically save
 
 Your data is now fully extracted, filtered, and classified, ready for deep-dive statistical analysis and visualization within the GenVariate suite.
 
+# Option 3: Display Samples on Distribution 📊
+
+This tool allows you to see how your selected samples fit within a broader biological context. It for example answers critical questions like:
+
+- Where do my samples fall on the full expression range of a specific gene?
+  
+- Are there other relevant samples (like controls or different treatments) from the same experiments that I might have missed in my initial filtering?
+  
+
+It works by plotting a histogram of all samples from the experiments in your dataset ( for example extracted samples during step: "GSE Extraction"), overlaid on a background distribution of all samples from an entire microarray platform.
+
+A dialog box will appear asking for display options:
+
+
+Background Platform: Select the microarray platform (e.g., GPL570) you want to use as the overall reference distribution.
+
+Gene Symbol (optional): Enter one or more gene symbols, separated by commas (e.g., APOE, TREM2). If you leave this blank, the tool will plot the distribution for all genes on the selected platform combined.
+
+An interactive plot window will open, displaying the distribution. If you entered multiple genes, you can navigate between their plots using the "Next" and "Previous" buttons.
 
 
 
 
+_Fig 8. An example distribution plot showing samples from two experiments (GSEs) against the full platform background. Note the red-bordered bars indicating missed samples._
 
+
+
+
+#Interactive Legend: 
+
+- Click on any GSE ID in the legend to open its official page on the NCBI GEO website in your browser. This allows for immediate investigation of an experiment's design.
+
+
+#Show Data Table: 
+
+- Clicking the "Show Data Table" button opens a new window with a detailed, color-coded list of every sample shown in the histogram.
+
+- This table explicitly labels each sample as either "In User File" or "Not In User File", making it easy to identify the exact GSMs that your initial filter missed.
+
+- You can double-click or right-click any row in the table to open the corresponding GSM or GSE page on GEO.
 
 
 
