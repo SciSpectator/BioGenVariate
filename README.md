@@ -327,7 +327,7 @@ _Fig 5. An example distribution plot showing samples from extracted Alzheimer di
 The plot has several key components:
 
 
-_Bar Border Colors (Crucial for Discovery): The border of each bar tells you about the completeness of your dataset._
+_1.Bar Border Colors (Crucial for Discovery): The border of each bar tells you about the completeness of your dataset._
 
 
 a ) Black Border: Complete. All samples within this expression range and GSE are present in your input file.
@@ -336,7 +336,7 @@ b) Red Border: Incomplete. This bar contains samples from an experiment that are
 
 
 
-_Interactive Legend: The legend is your primary tool for investigation and customization._
+_2.Interactive Legend: The legend is your primary tool for investigation and customization._
 
 
 a) Open GEO Page: Click on any GSE ID text in the legend to open its official page on the NCBI GEO website in your browser.
@@ -344,7 +344,7 @@ a) Open GEO Page: Click on any GSE ID text in the legend to open its official pa
 b) Customize Colors: Click on the color patch next to a GSE ID to open a color chooser dialog. Selecting a new color will instantly update the plot, allowing you to highlight specific experiments for better visualization.
 
 
-_Show Data Table:_ 
+_3.Show Data Table:_ 
 
 
 Clicking the "Show Data Table" button opens a new window with a detailed list of every sample shown in the histogram.
