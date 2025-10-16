@@ -319,6 +319,7 @@ An interactive plot window will open, displaying the distribution. If you entere
 
 
 
+<img width="1046" height="779" alt="Screenshot from 2025-10-16 13-57-42" src="https://github.com/user-attachments/assets/33b9f009-d25e-4f1e-b020-3356f33f8cfa" />
 
 _Fig 5. An example distribution plot showing samples from extracted Alzheimer disease experiments (GSEs) against the full platform background ( all other samples from this experiment/experiments)._
 
