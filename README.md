@@ -219,7 +219,7 @@ Once your data source is ready, choose one of the following labeling methods.
 
 This mode uses a local AI agent (gemma2:9b) to automatically analyze the rich text metadata of each sample and extract structured information. It's the fastest and most efficient method for labeling large datasets where manual entry is impractical.
 
-To dramatically speed up the analysis, the tool processes samples in parallel using multiple "workers." Think of it like hiring four separate assistants to work on the same task simultaneously. The application automatically creates four workers, dividing the total number of samples among them. Each worker is responsible for classifying 25% of the dataset, allowing multiple samples to be processed at once.
+To speed up the analysis, the tool processes samples in parallel using multiple "workers." The number of workers is dynamically adjusted based on your dataset size (up to a maximum of 20) to ensure optimal performance.
 
 How to Use It
 
