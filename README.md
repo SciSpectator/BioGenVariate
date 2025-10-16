@@ -319,7 +319,7 @@ An interactive plot window will open, displaying the distribution. If you entere
 
 
 
-_Fig 8. An example distribution plot showing samples from two experiments (GSEs) against the full platform background. Note the red-bordered bars indicating missed samples._
+_Fig 5. An example distribution plot showing samples from two experiments (GSEs) against the full platform background. Note the red-bordered bars indicating missed samples._
 
 
 
@@ -353,6 +353,9 @@ a) Consistent Coloring: The rows in this table are color-coded to match the colo
 b) The table explicitly labels each sample as either "In User File" or "Not In User File", making it easy to identify the exact GSMs that your initial filter missed.
 
 You can double-click or right-click any row in the table to open the corresponding GSM or GSE page on GEO.
+
+
+_Fig 6. An example of data table with color-coded sample list segregated by "In User File" or "Not In User File"*._
 
 
 # 2. Compare Distributions
@@ -440,7 +443,7 @@ You can customize the colors of the plots for better visualization ( like also i
 
 <img width="410" height="188" alt="Screenshot from 2025-10-13 18-06-47" src="https://github.com/user-attachments/assets/402eb9d6-050e-4b44-a74d-79f5752b7e5e" />
 
-_Ryc5. Example of additional window in legend option to determine the best color to your label (classified condition or sample/experiment ID)_
+_Ryc7. Example of additional window in legend option to determine the best color to your label (classified condition or sample/experiment ID)_
 
 
 
@@ -478,7 +481,7 @@ After an analysis is complete, the "Save Plots" button becomes active. Clicking 
 
 <img width="1614" height="867" alt="Screenshot from 2025-10-14 13-40-59" src="https://github.com/user-attachments/assets/7d2a345c-3b44-482a-9bc9-d8fbe596b099" />
 
-_Ryc6. Example of GUI preview of results and plots available in "Compare Distributions" from extracted in Step 1 alzheimer disease experiments ID (GSE) from GPL96 and GPL6947_
+_Ryc8. Example of GUI preview of results and plots available in "Compare Distributions" from extracted in Step 1 alzheimer disease experiments ID (GSE) from GPL96 and GPL6947_
 
 
 
@@ -532,7 +535,7 @@ Activate Analysis: After you make a selection, the "Analyze Selected Range" butt
 
 <img width="1269" height="875" alt="Screenshot from 2025-10-11 00-48-59" src="https://github.com/user-attachments/assets/2f84a2ee-03df-4535-ae9b-929f9b46bac5" />
 
-_Ryc7. Example of GUI preview of gene APP distributions from selected GPL96, GPL6947, GPL7202 and GPL6885 with selected subset of distribution in GPL96 which can be analyzed by clicking "Analyze Selected Range"_
+_Ryc9. Example of GUI preview of gene APP distributions from selected GPL96, GPL6947, GPL7202 and GPL6885 with selected subset of distribution in GPL96 which can be analyzed by clicking "Analyze Selected Range"_
     
 
 
@@ -549,12 +552,12 @@ What it shows: This plot displays the overall distribution of the gene across th
 
 <img width="850" height="571" alt="Screenshot from 2025-10-13 11-58-19" src="https://github.com/user-attachments/assets/f6061d09-2dc5-4414-9737-1e048e3acf08" />
 
-_Ryc8. Example of GSE Overlay  of gene APP distributions from selected subset of distribution in GPL96 after choosing option "Analyze Selected Range" - each colored "rug" marks tagging positions across entire distribution from the platform which subset is analyzed with window of summary of experiments IDs ("GSE") and their frequency on selected region ("Selected") and entire distribution ("Total")_
+_Ryc10. Example of GSE Overlay  of gene APP distributions from selected subset of distribution in GPL96 after choosing option "Analyze Selected Range" - each colored "rug" marks tagging positions across entire distribution from the platform which subset is analyzed with window of summary of experiments IDs ("GSE") and their frequency on selected region ("Selected") and entire distribution ("Total")_
 
 
 
 
-Interactivity: You can click on a GSE ID in the legend to open its official page on the NCBI GEO website. You can also click the colored patch next to it to change its color on the plot (_Ryc5._) - like in 2. Compare Distributions. This helps you quickly identify which experiments contributed the most samples to your selected expression range.
+Interactivity: You can click on a GSE ID in the legend to open its official page on the NCBI GEO website. You can also click the colored patch next to it to change its color on the plot (_Ryc10._) - like in 2. Compare Distributions. This helps you quickly identify which experiments contributed the most samples to your selected expression range.
 
 
 
@@ -574,7 +577,7 @@ Classified Analysis Plots: For each category the AI classified (e.g., Condition)
 <img width="1298" height="695" alt="Screenshot from 2025-10-13 11-53-10" src="https://github.com/user-attachments/assets/d227ca46-5848-41ff-933e-579b5c9609d3" /><img width="1302" height="693" alt="Screenshot from 2025-10-11 14-16-18" src="https://github.com/user-attachments/assets/34b07f11-900a-4412-a64d-fda946fe29b5" />
 
 
-_Ryc9. Example Classified Analysis Plots from selected subset of distribution in GPL96 for gene APP after choosing option "Analyze Selected Range" for classified Condition and Tissue colored differently_
+_Ryc11. Example Classified Analysis Plots from selected subset of distribution in GPL96 for gene APP after choosing option "Analyze Selected Range" for classified Condition and Tissue colored differently_
 
 
 Results Table: A final, detailed table lists every sample from your selection. It includes their GSM and GSE IDs, exact expression value, and all the new classifications determined by the AI. You can double-click any row to open that sample's page on the GEO website.
@@ -585,7 +588,7 @@ Results Table: A final, detailed table lists every sample from your selection. I
 
 <img width="1799" height="851" alt="Screenshot from 2025-10-13 11-51-46" src="https://github.com/user-attachments/assets/f6336df8-f9bf-4244-bd5a-6cd5279bcc62" />
 
-_Ryc10. Example final table from selected subset of distribution in GPL96 for gene APP after choosing option "Analyze Selected Range" with informations such as:GSM, GSE, Platform, Expression, Classified Age, Condition, Tissue, Treatment and Treatment time_
+_Ryc12. Example final table from selected subset of distribution in GPL96 for gene APP after choosing option "Analyze Selected Range" with informations such as:GSM, GSE, Platform, Expression, Classified Age, Condition, Tissue, Treatment and Treatment time_
 
 
     
