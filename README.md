@@ -323,21 +323,36 @@ _Fig 8. An example distribution plot showing samples from two experiments (GSEs)
 
 
 
-
-#Interactive Legend: 
-
-- Click on any GSE ID in the legend to open its official page on the NCBI GEO website in your browser. This allows for immediate investigation of an experiment's design.
+The plot has several key components:
 
 
-#Show Data Table: 
-
-- Clicking the "Show Data Table" button opens a new window with a detailed, color-coded list of every sample shown in the histogram.
-
-- This table explicitly labels each sample as either "In User File" or "Not In User File", making it easy to identify the exact GSMs that your initial filter missed.
-
-- You can double-click or right-click any row in the table to open the corresponding GSM or GSE page on GEO.
+_Bar Border Colors (Crucial for Discovery): The border of each bar tells you about the completeness of your dataset._
 
 
+a ) Black Border: Complete. All samples within this expression range and GSE are present in your input file.
+
+b) Red Border: Incomplete. This bar contains samples from an experiment that are NOT in your input file. This is a powerful visual cue that you may have missed important samples, such as the control group, a different timepoint, or another treatment arm from that same study.
+
+
+
+_Interactive Legend: The legend is your primary tool for investigation and customization._
+
+
+a) Open GEO Page: Click on any GSE ID text in the legend to open its official page on the NCBI GEO website in your browser.
+
+b) Customize Colors: Click on the color patch next to a GSE ID to open a color chooser dialog. Selecting a new color will instantly update the plot, allowing you to highlight specific experiments for better visualization.
+
+
+_Show Data Table:_ 
+
+
+Clicking the "Show Data Table" button opens a new window with a detailed list of every sample shown in the histogram.
+
+a) Consistent Coloring: The rows in this table are color-coded to match the colors in the plot legend. If you change a color in the plot, the table will reflect this change, ensuring perfect visual consistency.
+
+b) The table explicitly labels each sample as either "In User File" or "Not In User File", making it easy to identify the exact GSMs that your initial filter missed.
+
+You can double-click or right-click any row in the table to open the corresponding GSM or GSE page on GEO.
 
 
 # 2. Compare Distributions
