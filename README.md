@@ -313,7 +313,8 @@ A dialog box will appear asking for display options (Fig.5):
 
 
 
-<img width="405" height="500" alt="Screenshot from 2025-10-20 00-50-53" src="https://github.com/user-attachments/assets/75b22dfe-5b24-4fe4-a09a-141d97d17c55" />
+
+<img width="354" height="438" alt="Screenshot from 2025-10-20 00-52-44" src="https://github.com/user-attachments/assets/c899f516-2ca8-4422-b0be-07cdb9a136f2" />
 
 _Fig 5. An example option window in "Display Samples on Distribution" with Background Platform(s) and optional Gene symbol(s)_
 
